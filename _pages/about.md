@@ -50,9 +50,5 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         <a href="https://arxiv.org/abs/2308.12113">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
 
-      </th>
-    </tr>
-  </tbody>
-</table>
 
 
