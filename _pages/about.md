@@ -44,11 +44,32 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
   </thead>
   <tbody>
     <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-wk8r">Pattern Recognition 2024</th>
       <th class="tg-oe15">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey. <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
         <span style="display: block; margin-bottom: -13px;"></span> <br> 
         <a href="https://arxiv.org/abs/2308.12113">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
 
+
+
+<br>
+  
+
+
+# News
+---
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-wk8r">April 2024</th>
+    <th class="tg-oe15">Our paper "Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey." has been accepted to Pattern Recognition 2024.</th>
+  </tr>
+  
+</thead>
+<tbody>
+  <!-- Add all other rows here using <td> within <tbody> -->
+</tbody>
+</table>
 
 
