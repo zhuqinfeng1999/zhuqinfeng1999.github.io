@@ -28,17 +28,8 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
 </style>
 
 <table class="tg">
-  <tbody>
-      <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan 
-        <span style="display: block; margin-bottom: -13px;"></span> <br> 
-        <a href="https://arxiv.org/abs/2405.08493">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-      </th>
-    </tr>
-  </tbody>
-  <tbody>
+
+  <thread>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
@@ -51,7 +42,7 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         </a>
       </th>
     </tr>
-  </tbody>
+  </thread>
   <tbody>
     <tr>
       <th class="tg-wk8r">Pattern Recognition 2024</th>
