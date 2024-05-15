@@ -37,8 +37,6 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
       </th>
     </tr>
-  </thead>
-  <thead>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
