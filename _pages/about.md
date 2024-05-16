@@ -50,7 +50,7 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
           <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
         </a>
          <a href="https://www.zhihu.com/question/644452681/answer/3453564356">
-          <img src="https://img.shields.io/badge/知乎-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
+          <img src="https://img.shields.io/badge/Zhihu-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
         </a>
       </th>
     </tr>
@@ -60,11 +60,14 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
       <th class="tg-wk8r">Pattern Recognition 2024</th>
       <th class="tg-oe15">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey. <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
         <br> 
+        <a href="https://authors.elsevier.com/a/1j3TW77nKoLGM">
+          <img src="https://img.shields.io/badge/Elsevier-004f80" alt="Elsevier" style="width: auto; height: 20px;"/>
+        </a>
         <a href="https://arxiv.org/abs/2308.12113">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a> 
         <a href="https://www.zhihu.com/question/319291048/answer/3500262341">
-          <img src="https://img.shields.io/badge/知乎-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
+          <img src="https://img.shields.io/badge/Zhihu-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
         </a>
       </th>
     </tr>
