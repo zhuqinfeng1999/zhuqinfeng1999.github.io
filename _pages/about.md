@@ -49,6 +49,9 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         <a href="https://github.com/zhuqinfeng1999/Samba">
           <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
         </a>
+         <a href="https://www.zhihu.com/question/644452681/answer/3453564356">
+          <img src="https://img.shields.io/badge/知乎-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
+        </a>
       </th>
     </tr>
   </thead>
@@ -60,6 +63,9 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         <a href="https://arxiv.org/abs/2308.12113">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a> 
+        <a href="https://www.zhihu.com/question/319291048/answer/3500262341">
+          <img src="https://img.shields.io/badge/知乎-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
+        </a>
       </th>
     </tr>
   </tbody>
