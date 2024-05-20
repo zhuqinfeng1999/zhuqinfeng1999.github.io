@@ -37,6 +37,9 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         <a href="https://arxiv.org/abs/2405.08493">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a>
+        <a href="https://zhuanlan.zhihu.com/p/698748334">
+          <img src="https://img.shields.io/badge/Zhihu-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
+        </a>
       </th>
     </tr>
     <tr>
