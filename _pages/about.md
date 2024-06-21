@@ -32,6 +32,19 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
   <thead>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-oe15">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2406.14086">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/Seg-LSTM">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study. <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2405.08493">
