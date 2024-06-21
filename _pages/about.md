@@ -37,7 +37,6 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         <a href="https://arxiv.org/abs/2406.14086">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a>
-        </a>
         <a href="https://github.com/zhuqinfeng1999/Seg-LSTM">
           <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
         </a>
