@@ -117,7 +117,7 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
 # Service
 ---
 
-**Journal Reviewer**: IEEE TCSVT 2024, IEEE Access 2024.
+**Journal Reviewer**: <br><u>IEEE TCSVT 2024</u>, IEEE Access 2024.
 
 **Conference/Workshop Reviewer**: ArtInHCI 2024.
 
