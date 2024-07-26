@@ -28,9 +28,6 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 </style>
 
 <table class="tg">
-
-    
-  <thead>
     <tr>
       <th class="tg-wk8r">Pattern Recognition 2024</th>
       <th class="tg-oe15">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey. <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
@@ -92,8 +89,6 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
-  </thead>
- 
 </table>
 
 
