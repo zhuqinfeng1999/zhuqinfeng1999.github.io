@@ -9,7 +9,7 @@ redirect_from:
 <p align="justify">
 I am a Ph.D. student at Xi'an Jiaotong-Liverpool University and University of Liverpool, where I had been very fortunate to be advised by <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan">Dr. Lei Fan</a>. I received the degree of Master of Research in Computer Science from the University of Liverpool, Liverpool, U.K., in 2023.
 
-My research interests mainly lie on deep learning, especially in multi-modal information fusion, 3D computer vision, semantic segmentation, and data augmentation.
+My research interests mainly lie on deep learning, especially in remote sensing, multi-modal information fusion, 3D computer vision, semantic segmentation, and data augmentation.
 </p>
 
 <u>I am always open to collaboration!</u>
@@ -29,48 +29,8 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
 
 <table class="tg">
 
+    
   <thead>
-    <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
-        <br> 
-        <a href="https://arxiv.org/abs/2406.14086">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://github.com/zhuqinfeng1999/Seg-LSTM">
-          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
-    <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study. <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
-        <br> 
-        <a href="https://arxiv.org/abs/2405.08493">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://zhuanlan.zhihu.com/p/698748334">
-          <img src="https://img.shields.io/badge/Zhihu-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
-    <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
-        <br> 
-        <a href="https://arxiv.org/abs/2404.01705">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://github.com/zhuqinfeng1999/Samba">
-          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
-        </a>
-         <a href="https://www.zhihu.com/question/644452681/answer/3453564356">
-          <img src="https://img.shields.io/badge/Zhihu-0084b4" alt="Zhihu" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <th class="tg-wk8r">Pattern Recognition 2024</th>
       <th class="tg-oe15">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey. <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
@@ -86,7 +46,54 @@ My research interests mainly lie on deep learning, especially in multi-modal inf
         </a>
       </th>
     </tr>
-  </tbody>
+    <tr>
+      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-oe15">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study. <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2405.08493">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-oe15">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2406.14086">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/Seg-LSTM">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-oe15">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
+        <br> 
+        <a href="https://arxiv.org/abs/2404.01705">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/Samba">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tr>
+      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-oe15">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste. <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
+        <br> 
+        <a href="https://arxiv.org/abs/2407.17028">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/WasteMS">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  </thead>
+ 
 </table>
 
 
