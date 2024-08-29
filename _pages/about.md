@@ -30,9 +30,9 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 <table class="tg">
     <tr>
       <th class="tg-wk8r">Pattern Recognition 2024</th>
-      <th class="tg-oe15">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey. <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
+      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.patcog.2024.110532">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey.</a> <br><u>Qinfeng Zhu</u>, Lei Fan, Ningxin Weng
         <br> 
-        <a href="https://authors.elsevier.com/a/1j3TW77nKoLGM">
+        <a href="https://doi.org/10.1016/j.patcog.2024.110532">
           <img src="https://img.shields.io/badge/Elsevier-004f80" alt="Elsevier" style="width: auto; height: 20px;"/>
         </a>
         <a href="https://arxiv.org/abs/2308.12113">
