@@ -45,7 +45,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study. <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2405.08493">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2405.08493">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
@@ -54,7 +54,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2406.14086">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2406.14086">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
@@ -66,7 +66,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model. <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2404.01705">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
         <br> 
         <a href="https://arxiv.org/abs/2404.01705">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
@@ -78,7 +78,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
   <tr>
       <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste. <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
         <br> 
         <a href="https://arxiv.org/abs/2407.17028">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
