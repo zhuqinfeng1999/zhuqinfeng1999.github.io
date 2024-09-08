@@ -127,6 +127,8 @@ IEEE Access 2024.
 
 **Conference/Workshop Reviewer**: 
 
-International Conference on Artificial Intelligence and Human-Computer Interaction(ArtInHCI) 2024.
+International Conference on Artificial Intelligence and Human-Computer Interaction (ArtInHCI) 2024,
+
+International Workshop on Automation, Control and Communication Engineering (IWACCE) 2024.
 
 <br>
