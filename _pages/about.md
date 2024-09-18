@@ -126,7 +126,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 # Service
 ---
 
-<h3><strong>Journal Reviewer</strong>:</h3>
+<h2><strong>Journal Reviewer</strong>:</h2>
 
 **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2024**,
 
@@ -134,7 +134,7 @@ IEEE Sensors Journal 2024,
 
 IEEE Access 2024.
 
-<h3><strong>Conference/Workshop Reviewer</strong>:</h3>
+<h2><strong>Conference/Workshop Reviewer</strong>:</h2>
 
 **International Conference on Learning Representation (ICLR) 2025**,
 
