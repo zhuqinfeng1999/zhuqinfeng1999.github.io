@@ -88,6 +88,15 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
+  <tr>
+      <th class="tg-wk8r">Buildings 2024</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.3390/buildings14092847">Algorithm-Driven Extraction of Point Cloud Data Representing Bottom Flanges of Beams in a Complex Steel Frame Structure for Deformation Measurement.</a> <br>Yang Zhao, Dufei Wang, <u>Qinfeng Zhu</u>, Lei Fan, Yuanfeng Bao
+        <br> 
+        <a href="https://doi.org/10.3390/buildings14092847">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
 </table>
 
 
@@ -126,6 +135,8 @@ IEEE Sensors Journal 2024,
 IEEE Access 2024.
 
 **Conference/Workshop Reviewer**: 
+
+International Conference on Learning Representation (ICLR) 2025,
 
 International Conference on Artificial Intelligence and Human-Computer Interaction (ArtInHCI) 2024,
 
