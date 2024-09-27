@@ -85,6 +85,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
+  <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
         <br> 
