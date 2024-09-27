@@ -16,7 +16,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <br>
 
-# Publications
+# Highlighted Publications
 
 ---
 <style type="text/css">
@@ -43,6 +43,28 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
+  <tr>
+      <th class="tg-wk8r">Heliyon 2024</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.heliyon.2024.e38495">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
+        <br> 
+        <a href="https://doi.org/10.1016/j.heliyon.2024.e38495">
+          <img src="https://img.shields.io/badge/Cell-004f80" alt="Cell" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://arxiv.org/abs/2404.01705">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/Samba">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  <tr>
+</table>
+
+# Other Publications
+
+---
+<table class="tg">
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2405.08493">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
@@ -64,19 +86,6 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
-    <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2404.01705">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
-        <br> 
-        <a href="https://arxiv.org/abs/2404.01705">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://github.com/zhuqinfeng1999/Samba">
-          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
-  <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
         <br> 
@@ -99,16 +108,17 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
 </table>
 
-
 <br>
-  
-
 
 # News
 ---
 
 <table class="tg">
 <thead>
+    <tr>
+    <th class="tg-wk8r">Sep 2024</th>
+    <th class="tg-oe15">Our paper "Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model." has been accepted to Heliyon 2024.</th>
+  </tr>
   <tr>
     <th class="tg-wk8r">April 2024</th>
     <th class="tg-oe15">Our paper "Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey." has been accepted to Pattern Recognition 2024.</th>
@@ -144,6 +154,6 @@ International Conference on Artificial Intelligence and Human-Computer Interacti
 
 International Workshop on Automation, Control and Communication Engineering (IWACCE) 2024.
 
-
-
 <br>
+
+
