@@ -58,7 +58,6 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
-  <tr>
 </table>
 
 # Other Publications
