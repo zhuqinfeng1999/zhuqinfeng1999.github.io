@@ -44,6 +44,18 @@ My research interests mainly lie on deep learning, especially in remote sensing,
       </th>
     </tr>
   <tr>
+      <th class="tg-wk8r">JSTARS 2024</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1109/JSTARS.2024.3472296">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
+        <br> 
+        <a href="https://doi.org/10.1109/JSTARS.2024.3472296">
+          <img src="https://img.shields.io/badge/IEEE-004f80" alt="IEEE" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://arxiv.org/abs/2405.08493">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  <tr>
       <th class="tg-wk8r">Heliyon 2024</th>
       <th class="tg-oe15"><a href="https://doi.org/10.1016/j.heliyon.2024.e38495">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
         <br> 
@@ -64,15 +76,6 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 ---
 <table class="tg">
-    <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2405.08493">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
-        <br> 
-        <a href="https://arxiv.org/abs/2405.08493">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
     <tr>
       <th class="tg-wk8r">Under Review 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2406.14086">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
@@ -115,6 +118,10 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <table class="tg">
 <thead>
+  <tr>
+    <th class="tg-wk8r">Oct 2024</th>
+    <th class="tg-oe15">Our paper "Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study." has been accepted to JSTARS 2024.</th>
+  </tr>
     <tr>
     <th class="tg-wk8r">Sep 2024</th>
     <th class="tg-oe15">Our paper "Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model." has been accepted to Heliyon 2024.</th>
