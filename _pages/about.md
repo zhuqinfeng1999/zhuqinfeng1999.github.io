@@ -149,6 +149,8 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2024**,
 
+**Neural Networks 2024**,
+
 IEEE Sensors Journal 2024,
 
 IEEE Access 2024.
