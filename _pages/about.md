@@ -145,11 +145,11 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <h2><strong>Journal Reviewer</strong>:</h2>
 
-**ISPRS Journal of Photogrammetry and Remote Sensing 2024**,
+**ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS) 2024**,
 
 **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2024**,
 
-**Neural Networks 2024**,
+**Neural Networks (NN) 2024**,
 
 IEEE Sensors Journal 2024,
 
@@ -158,6 +158,8 @@ IEEE Access 2024.
 <h2><strong>Conference/Workshop Reviewer</strong>:</h2>
 
 **International Conference on Learning Representation (ICLR) 2025**,
+
+**Machine Learning for Health (NeurIPS-ML4H) 2024**,
 
 International Conference on Artificial Intelligence and Human-Computer Interaction (ArtInHCI) 2024,
 
