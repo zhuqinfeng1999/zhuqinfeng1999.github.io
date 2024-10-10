@@ -130,7 +130,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 <thead>
   <tr>
     <th class="tg-wk8r">Oct 2024</th>
-    <th class="tg-oe15">Our paper "Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste." has been accepted to International Conference on Multimedia Modelling (MMM 2025).</th>
+    <th class="tg-oe15">Our paper "Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste." has been accepted to International Conference on Multimedia Modelling (MMM 2025 CCF-C).</th>
   </tr>
   <tr>
     <th class="tg-wk8r">Oct 2024</th>
