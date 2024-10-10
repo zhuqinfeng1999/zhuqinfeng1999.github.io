@@ -76,6 +76,18 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 ---
 <table class="tg">
+  <tr>
+      <th class="tg-wk8r">MMM 2025</th>
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
+        <br> 
+        <a href="https://arxiv.org/abs/2407.17028">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/WasteMS">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
     <tr>
       <th class="tg-wk8r">IEEE ICVISP 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2410.06725">Evaluating the Impact of Point Cloud Colorization on Semantic Segmentation Accuracy.</a> <br><u>Qinfeng Zhu</u>, Jiaze Cao, Yuanzhi Cai, Lei Fan
@@ -97,18 +109,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
-  <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
-        <br> 
-        <a href="https://arxiv.org/abs/2407.17028">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://github.com/zhuqinfeng1999/WasteMS">
-          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
+
   <tr>
       <th class="tg-wk8r">Buildings 2024</th>
       <th class="tg-oe15"><a href="https://doi.org/10.3390/buildings14092847">Algorithm-Driven Extraction of Point Cloud Data Representing Bottom Flanges of Beams in a Complex Steel Frame Structure for Deformation Measurement.</a> <br>Yang Zhao, Dufei Wang, <u>Qinfeng Zhu</u>, Lei Fan, Yuanfeng Bao
@@ -127,6 +128,10 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <table class="tg">
 <thead>
+  <tr>
+    <th class="tg-wk8r">Oct 2024</th>
+    <th class="tg-oe15">Our paper "Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste." has been accepted to International Conference on Multimedia Modelling (MMM 2025).</th>
+  </tr>
   <tr>
     <th class="tg-wk8r">Oct 2024</th>
     <th class="tg-oe15">Our paper "Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study." has been accepted to JSTARS 2024.</th>
