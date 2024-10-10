@@ -134,7 +134,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
   </tr>
   <tr>
     <th class="tg-wk8r">Oct 2024</th>
-    <th class="tg-oe15">Our paper "Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study." has been accepted to JSTARS 2024.</th>
+    <th class="tg-oe15">Our paper "Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study." has been accepted to JSTARS 2024 (Top).</th>
   </tr>
     <tr>
     <th class="tg-wk8r">Sep 2024</th>
@@ -142,7 +142,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
   </tr>
   <tr>
     <th class="tg-wk8r">April 2024</th>
-    <th class="tg-oe15">Our paper "Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey." has been accepted to Pattern Recognition 2024.</th>
+    <th class="tg-oe15">Our paper "Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey." has been accepted to Pattern Recognition 2024 (Top).</th>
   </tr>
   
 </thead>
