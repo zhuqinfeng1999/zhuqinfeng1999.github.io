@@ -55,21 +55,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
         </a>
       </th>
     </tr>
-  <tr>
-      <th class="tg-wk8r">Heliyon 2024</th>
-      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.heliyon.2024.e38495">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
-        <br> 
-        <a href="https://doi.org/10.1016/j.heliyon.2024.e38495">
-          <img src="https://img.shields.io/badge/Cell-004f80" alt="Cell" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://arxiv.org/abs/2404.01705">
-          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
-        </a>
-        <a href="https://github.com/zhuqinfeng1999/Samba">
-          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
-        </a>
-      </th>
-    </tr>
+
 </table>
 
 # Other Publications
@@ -84,6 +70,21 @@ My research interests mainly lie on deep learning, especially in remote sensing,
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a>
         <a href="https://github.com/zhuqinfeng1999/WasteMS">
+          <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  <tr>
+      <th class="tg-wk8r">Heliyon 2024</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.heliyon.2024.e38495">Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Yuan Fang, Yihan Yang, Cheng Chen, Lei Fan, Anh Nguyen 
+        <br> 
+        <a href="https://doi.org/10.1016/j.heliyon.2024.e38495">
+          <img src="https://img.shields.io/badge/Cell-004f80" alt="Cell" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://arxiv.org/abs/2404.01705">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://github.com/zhuqinfeng1999/Samba">
           <img src="https://img.shields.io/badge/GitHub-004f80" alt="GitHub Repository" style="width: auto; height: 20px;"/>
         </a>
       </th>
