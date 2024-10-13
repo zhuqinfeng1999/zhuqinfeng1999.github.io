@@ -166,6 +166,10 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 **Neural Networks (NN) 2024**,
 
+**Engineering Applications of Artificial Intelligence (EAAI) 2024**,
+
+**Expert Systems with Applications (ESWA) 2024**,
+
 IEEE Sensors Journal 2024,
 
 IEEE Access 2024.
