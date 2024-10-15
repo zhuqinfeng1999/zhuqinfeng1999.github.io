@@ -99,7 +99,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
       </th>
     </tr>
     <tr>
-      <th class="tg-wk8r">Under Review 2024</th>
+      <th class="tg-wk8r">SSIP 2024</th>
       <th class="tg-oe15"><a href="https://arxiv.org/abs/2406.14086">Seg-LSTM: Performance of xLSTM for Semantic Segmentation of Remotely Sensed Images.</a> <br><u>Qinfeng Zhu</u>, Yuanzhi Cai, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2406.14086">
