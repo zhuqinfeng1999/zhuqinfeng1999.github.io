@@ -162,6 +162,8 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 **ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS) 2024**,
 
+**Pattern Recognition (PR) 2024**,
+
 **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2024**,
 
 **Neural Networks (NN) 2024**,
