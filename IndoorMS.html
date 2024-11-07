@@ -32,7 +32,7 @@ author_profile: false
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Towards Accurate Urban Scene Understanding using Point Clouds: The SemanticUrban Dataset</title>
+  <title>IndoorMS: A Multispectral Dataset for Semantic Segmentation in Indoor Scene Understanding</title>
   <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -66,7 +66,7 @@ author_profile: false
                 <span class="author-block">
                   <a href="https://zhuqinfeng1999.github.io/" target="_blank">Qinfeng Zhu</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                  <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank">Lei Fan</a><sup>*,1</sup></span>
+                  <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank">Lei Fan</a><sup>*,1</sup>,</span>
                                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=377ZzK8AAAAJ&hl=en&oi=ao" target="_blank">Jingjing Xiao</a><sup>3</sup></span>
                   </div>
@@ -124,10 +124,8 @@ author_profile: false
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="/static/images/SemanticUrban1.jpg" alt="Teaser Image" style="width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered">
-        Example point clouds from the SemanticUrban dataset: intensity values (left), RGB colors (middle) and class labels (right). 
-      </h2>
+      <img src="/static/images/IndoorMS1.jpg" alt="Teaser Image" style="width:100%; height:auto;">
+
     </div>
   </div>
 </section>
@@ -142,7 +140,7 @@ author_profile: false
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Point clouds are essential data representations of three-dimensional surfaces of real-world scenes and objects. With the recent developments in urban scene understanding, there is a substantial demand for semantic point cloud datasets that represent urban scenes with high semantic accuracy and fine semantic details. However, existing benchmark datasets of this kind are very limited, and their semantic information is either not accurate enough or lacks detailed semantic classification. In this paper, we present SemanticUrban, a large-scale high-resolution point cloud dataset acquired from 150 urban scenes using terrestrial laser scanning. SemanticUrban features super-high-resolution point clouds and highly accurate semantic categorizations, classifying each data point into one of 23 defined classes. We conduct extensive evaluations on SemanticUrban using representative deep learning methods, followed by a detailed discussion of our findings. Additionally, we highlight main challenges associated with the SemanticUrban dataset, motivating future research to develop new approaches for tackling these issues.
+            Indoor autonomous vehicles and drones require a comprehensive understanding of indoor environments for tasks such as localization, navigation, and executing other complex missions. Typically, RGB information is captured using cameras or similar sensors, and deep learning-based semantic segmentation techniques are employed for pixel-level scene understanding. However, indoor environments also contain rich information beyond the visible light spectrum, which has been largely overlooked in existing research. To fully leverage multispectral data, this study introduces IndoorMS, a multispectral dataset for indoor scene understanding. Using a multispectral sensor, we collected images from diverse indoor settings—including meeting rooms, halls, lounges, offices, corridors, and classrooms—across 17 buildings, providing semantic segmentation annotations with 19 fine-grained categories. Benchmark experiments were conducted using multiple representative semantic segmentation frameworks, and the results were discussed. This work is the first to support research on indoor multispectral scene understanding with a dedicated dataset. Key challenges and future directions are also highlighted.
           </p>
         </div>
       </div>
@@ -158,9 +156,9 @@ author_profile: false
 
         <div class="item">
           <!-- Single image displayed -->
-          <img src="/static/images/SemanticUrban2.jpg" alt="SemanticUrban Dataset Annotations"/>
+          <img src="/static/images/IndoorMS2.jpg" alt="IndoorMS Dataset Annotations"/>
           <h2 class="subtitle has-text-centered">
-            Examples of annotated point clouds from Semantic3D and SemanticUrban, visualized in the spherical coordinate system projection: (a) jagged labeling errors at the road and grass boundaries in Semantic3D, (b) accurately labeled object boundaries in SemanticUrban, (c) limited semantic categories in Semantic3D where poles, bicycles, and motorcycles are labelled into a single semantic category, (d) comprehensive semantic categories in SemanticUrban where bicycles, motorcycles, and others differently are categorized separately.
+            Examples of the IndoorMS dataset. The first line is the lounge scene, the second line is the corridor scene, and the third line is the classroom scene.
           </h2>
         </div>
       
@@ -178,27 +176,27 @@ author_profile: false
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="/static/images/example2.jpg" alt="MY ALT TEXT"/>
+        <img src="/static/images/IndoorMS4.jpg" alt="MY ALT TEXT"/>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="/static/images/example1.jpg" alt="MY ALT TEXT"/>
+        <img src="/static/images/IndoorMS5.jpg" alt="MY ALT TEXT"/>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="/static/images/example3.jpg" alt="MY ALT TEXT"/>
+        <img src="/static/images/IndoorMS6.jpg" alt="MY ALT TEXT"/>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="/static/images/example4.jpg" alt="MY ALT TEXT"/>
+      <img src="/static/images/IndoorMS7.jpg" alt="MY ALT TEXT"/>
     </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="/static/images/example5.jpg" alt="MY ALT TEXT"/>
+      <img src="/static/images/IndoorMS8.jpg" alt="MY ALT TEXT"/>
     </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="/static/images/example6.jpg" alt="MY ALT TEXT"/>
+      <img src="/static/images/IndoorMS9.jpg" alt="MY ALT TEXT"/>
     </div>
   </div>
 </div>
@@ -227,7 +225,7 @@ author_profile: false
       <pre><code>BibTex Code Here</code></pre>
         <p>
       The dataset and its documentation will be accessed and downloaded from the GitHub link after peer review: 
-      <a href="https://github.com/zhuqinfeng1999/SemanticUrban" target="_blank">https://github.com/zhuqinfeng1999/SemanticUrban</a>.
+      <a href="https://github.com/zhuqinfeng1999/IndoorMS" target="_blank">https://github.com/zhuqinfeng1999/IndoorMS</a>.
     </p>
     </div>
 </section>
