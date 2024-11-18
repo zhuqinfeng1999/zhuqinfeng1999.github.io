@@ -174,9 +174,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 **Neurocomputing 2024**,
 
-IEEE Sensors Journal 2024,
-
-IEEE Access 2024.
+and other 5 journals.
 
 <h2><strong>Conference/Workshop Reviewer</strong>:</h2>
 
@@ -184,9 +182,7 @@ IEEE Access 2024.
 
 **Machine Learning for Health (NeurIPS-ML4H) 2024**,
 
-International Conference on Artificial Intelligence and Human-Computer Interaction (ArtInHCI) 2024,
-
-International Workshop on Automation, Control and Communication Engineering (IWACCE) 2024.
+and other 2 conferences.
 
 <br>
 
