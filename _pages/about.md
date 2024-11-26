@@ -176,7 +176,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 **Neurocomputing**,
 
-and other 5 journals.
+and other **5** journals.
 
 <h2><strong>Conference/Workshop Reviewer</strong>:</h2>
 
@@ -184,7 +184,7 @@ and other 5 journals.
 
 **Machine Learning for Health (NeurIPS-ML4H)**,
 
-and other 2 conferences.
+and other **2** conferences.
 
 <br>
 
