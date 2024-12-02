@@ -184,6 +184,8 @@ and other **5** journals.
 
 **Machine Learning for Health (NeurIPS-ML4H)**,
 
+**International Joint Conference on Neural Networks (IJCNN)**,
+
 and other **2** conferences.
 
 <br>
