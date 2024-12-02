@@ -188,6 +188,12 @@ and other **5** journals.
 
 and other **2** conferences.
 
+<h2><strong>Membership</strong>:</h2>
+
+**Senior Member of the International Society for Applied Computing (ISAC)**,
+
+**Member of the Institute of Electrical and Electronics Engineers (IEEE)**.
+
 <br>
 
 
