@@ -158,25 +158,41 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 # Service
 ---
 
+<h2><strong>Membership</strong>:</h2>
+
+**Senior Member of the International Society for Applied Computing (ISAC)**,
+
+**Member of the Institute of Electrical and Electronics Engineers (IEEE)**.
+
 <h2><strong>Journal Reviewer</strong>:</h2>
+
+**IEEE Transactions on Neural Networks and Learning Systems (TNNLS)**,
+
+**IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**,
+
+**IEEE Transactions on Intelligent Transportation Systems (T-ITS)**,
 
 **ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS)**,
 
 **Pattern Recognition (PR)**,
 
-**IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**,
-
 **Neural Networks (NN)**,
-
-**IEEE Transactions on Intelligent Transportation Systems (T-ITS)**,
-
-**Engineering Applications of Artificial Intelligence (EAAI)**,
 
 **Expert Systems with Applications (ESWA)**,
 
+**Engineering Applications of Artificial Intelligence (EAAI)**,
+
 **Neurocomputing**,
 
-and other **5** journals.
+IEEE Sensors journal,
+
+IEEE Access,
+
+Complex & Intelligent Systems,
+
+Computers & Graphics,
+
+Applied Intelligence.
 
 <h2><strong>Conference/Workshop Reviewer</strong>:</h2>
 
@@ -184,15 +200,12 @@ and other **5** journals.
 
 **Machine Learning for Health (NeurIPS-ML4H)**,
 
-**International Joint Conference on Neural Networks (IJCNN)**,
+International Joint Conference on Neural Networks (IJCNN),
 
-and other **2** conferences.
+IEEE International Symposium on Biomedical Imaging (ISBI),
 
-<h2><strong>Membership</strong>:</h2>
+International Conference on Artificial Intelligence and Human-Computer Interaction.
 
-**Senior Member of the International Society for Applied Computing (ISAC)**,
-
-**Member of the Institute of Electrical and Electronics Engineers (IEEE)**.
 
 <br>
 
