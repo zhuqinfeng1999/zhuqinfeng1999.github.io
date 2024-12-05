@@ -160,9 +160,9 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <h2><strong>Membership</strong>:</h2>
 
-**Senior Member of the International Society for Applied Computing (ISAC)**,
+**Senior Member** of ISAC,
 
-**Member of the Institute of Electrical and Electronics Engineers (IEEE)**.
+**Member** of IEEE.
 
 <h2><strong>Journal Reviewer</strong>:</h2>
 
