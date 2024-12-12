@@ -112,6 +112,16 @@ My research interests mainly lie on deep learning, especially in remote sensing,
     </tr>
 
   <tr>
+      <th class="tg-wk8r">arXiv 2024</th>
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">MSCrackMamba: Leveraging Vision Mamba for Crack Detection in Fused Multispectral Imagery.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2412.06211">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+
+  <tr>
       <th class="tg-wk8r">Buildings 2024</th>
       <th class="tg-oe15"><a href="https://doi.org/10.3390/buildings14092847">Algorithm-Driven Extraction of Point Cloud Data Representing Bottom Flanges of Beams in a Complex Steel Frame Structure for Deformation Measurement.</a> <br>Yang Zhao, Dufei Wang, <u>Qinfeng Zhu</u>, Lei Fan, Yuanfeng Bao
         <br> 
