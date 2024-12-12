@@ -16,7 +16,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <br>
 
-# Highlighted Publications
+# Highlight
 
 ---
 <style type="text/css">
@@ -58,7 +58,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 </table>
 
-# Other Publications
+# Publications
 
 ---
 <table class="tg">
