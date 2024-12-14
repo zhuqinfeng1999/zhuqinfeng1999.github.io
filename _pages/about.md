@@ -113,7 +113,7 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
   <tr>
       <th class="tg-wk8r">arXiv 2024</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">MSCrackMamba: Leveraging Vision Mamba for Crack Detection in Fused Multispectral Imagery.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Lei Fan
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2412.06211">MSCrackMamba: Leveraging Vision Mamba for Crack Detection in Fused Multispectral Imagery.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2412.06211">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
