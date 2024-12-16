@@ -12,7 +12,7 @@ I am a Ph.D. student at Xi'an Jiaotong-Liverpool University and University of Li
 My research interests mainly lie on deep learning, especially in remote sensing, multi-modal information fusion, 3D computer vision, semantic segmentation, and data augmentation.
 </p>
 
-<u>I am always open to collaboration!</u>
+<u>I am always open to collaboration!</u> Feel free to e-mail me🤩! <a href="zhuqinfeng1999@google.com">zhuqinfeng1999@google.com</a> / <a href="qinfeng.zhu21@student.xjtlu.edu.cn">qinfeng.zhu21@student.xjtlu.edu.cn</a>
 
 <br>
 
