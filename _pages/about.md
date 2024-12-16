@@ -14,6 +14,8 @@ My research interests mainly lie on deep learning, especially in remote sensing,
 
 <u>I am always open to collaboration!</u> Feel free to e-mail me🤩! <a href="zhuqinfeng1999@google.com">zhuqinfeng1999@google.com</a> / <a href="qinfeng.zhu21@student.xjtlu.edu.cn">qinfeng.zhu21@student.xjtlu.edu.cn</a>
 
+<u>I am looking for a postdoctoral position in 2026/2027!</u>(when I graduate in 2026)
+
 <br>
 
 # Highlight
