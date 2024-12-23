@@ -210,7 +210,7 @@ Applied Intelligence.
 
 **International Conference on Learning Representation (ICLR)**,
 
-**Association for the Advancement of Artificial Intelligence (AAAI)**,
+**Annual AAAI Conference on Artificial Intelligence (AAAI)**,
 
 **Machine Learning for Health (NeurIPS-ML4H)**,
 
