@@ -212,7 +212,11 @@ Applied Intelligence.
 
 **Annual AAAI Conference on Artificial Intelligence (AAAI)**,
 
+**International Joint Conference on Artificial Intelligence (IJCAI)**,
+
 **Machine Learning for Health (NeurIPS-ML4H)**,
+
+**IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)**,
 
 International Joint Conference on Neural Networks (IJCNN),
 
