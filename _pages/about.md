@@ -66,8 +66,11 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
 <table class="tg">
   <tr>
       <th class="tg-wk8r">MMM 2025</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2407.17028">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
+      <th class="tg-oe15"><a href="https://doi.org/10.1007/978-981-96-2054-8_27">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
         <br> 
+        <a href="[https://doi.org/10.1016/j.heliyon.2024.e38495](https://doi.org/10.1007/978-981-96-2054-8_27)">
+          <img src="https://img.shields.io/badge/Springer-004f80" alt="Springer" style="width: auto; height: 20px;"/>
+        </a>
         <a href="https://arxiv.org/abs/2407.17028">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a>
