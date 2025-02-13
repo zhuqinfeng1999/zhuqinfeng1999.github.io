@@ -225,6 +225,8 @@ International Joint Conference on Neural Networks (IJCNN),
 
 IEEE International Symposium on Biomedical Imaging (ISBI),
 
+IEEE Symposium on Computers & Informatics (ISCI),
+
 International Conference on Artificial Intelligence and Human-Computer Interaction.
 
 
