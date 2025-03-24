@@ -203,6 +203,8 @@ IEEE Sensors journal,
 
 IEEE Access,
 
+Journal of Supercomputing,
+
 Complex & Intelligent Systems,
 
 Computers & Graphics,
