@@ -80,9 +80,8 @@ author_profile: false
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://doi.org/10.1109/JSEN.2025.3559348" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -93,7 +92,7 @@ author_profile: false
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/IndoorMS" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -102,16 +101,7 @@ author_profile: false
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                
             </div>
           </div>
         </div>
@@ -141,7 +131,7 @@ author_profile: false
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Indoor scene understanding is an important task in computer vision. Typically, RGB information has been used as input for deep-learning-based semantic segmentation networks to achieve pixel-level scene understanding. However, indoor environments also offer rich information beyond the visible light spectrum, which existing research has largely overlooked. This study introduces IndoorMS, a dedicated multispectral dataset for semantic segmentation of indoor scenes. We collected images with a multispectral sensor across diverse indoor environment settings, including meeting rooms, halls, lounges, offices, corridors, and classrooms, in 17 buildings. This finely segmented dataset provides 19 semantic categories. Benchmark experiments are conducted using multiple representative semantic segmentation frameworks, followed by a detailed evaluation of their segmentation performance. This work is the first to support research on indoor multispectral scene understanding with a dedicated dataset. Key challenges associated with IndoorMS and future research directions are also highlighted. The project page for the IndoorMS dataset is available at https://zhuqinfeng1999.github.io/IndoorMS/. (The dataset will be publicly available for download after peer review.)
+            Indoor scene understanding is a critical task in computer vision, traditionally relying on RGB data for deep learning-based semantic segmentation to achieve pixel-level understanding. However, indoor environments provide valuable information beyond the visible light spectrum, which has been largely overlooked in existing research. To address this gap, we introduce IndoorMS, a comprehensive multispectral dataset specifically designed for the semantic segmentation of indoor scenes. The dataset comprises images captured using a multispectral sensor in 17 buildings across diverse indoor settings, including meeting rooms, halls, lounges, offices, corridors, and classrooms. With 19 finely annotated semantic categories, IndoorMS enables robust evaluation of indoor scene segmentation. Benchmark experiments are performed using several leading semantic segmentation frameworks, followed by a thorough analysis of their performance. The results indicate that the optimal model combination, namely ConvNeXt-s with UperNet, achieved an mF1 score of 82.38 and an mIoU score of 72.90. Despite these promising results, IndoorMS’s challenges on segmentation networks remain, such as class distribution imbalance and domain gaps between RGB and multispectral data. This work marks the first effort to support multispectral indoor scene understanding with a dedicated dataset, offering new opportunities for research in this domain. Potential avenues for future research are presented. The project page for the IndoorMS dataset is available at https://zhuqinfeng1999.github.io/IndoorMS/.
           </p>
         </div>
       </div>
