@@ -46,6 +46,15 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
       </th>
     </tr>
   <tr>
+      <th class="tg-wk8r">arXiv 2025</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.patcog.2024.110532">ClassWise-CRF: Category-Specific Fusion for Enhanced Semantic Segmentation of Remote Sensing Imagery.</a> <br><u>Qinfeng Zhu</u>, Yunxi Jiang, Lei Fan
+        <br> 
+        <a href="[https://arxiv.org/abs/2308.12113](https://doi.org/10.48550/arXiv.2504.21491)">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a> 
+      </th>
+    </tr>
+  <tr>
       <th class="tg-wk8r">JSTARS 2024</th>
       <th class="tg-oe15"><a href="https://doi.org/10.1109/JSTARS.2024.3472296">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery: An Experimental Study.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan
         <br> 
@@ -57,6 +66,19 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
         </a>
       </th>
     </tr>
+    <tr>
+      <th class="tg-wk8r">IEEE Sensors Journal 2025</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1109/JSEN.2025.3559348">IndoorMS: A Multispectral Dataset for Semantic Segmentation in Indoor Scene Understanding</a> <br><u>Qinfeng Zhu</u>, Jingjing xiao, Lei Fan
+        <br> 
+        <a href="https://doi.org/10.1109/JSEN.2025.3559348">
+          <img src="https://img.shields.io/badge/IEEE-004f80" alt="IEEE" style="width: auto; height: 20px;"/>
+        </a>
+        <a href="https://zhuqinfeng1999.github.io/IndoorMS/">
+          <img src="https://img.shields.io/badge/PAGE-80000f" alt="PAGE" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+    
 
 </table>
 
@@ -144,6 +166,10 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
 
 <table class="tg">
 <thead>
+  <tr>
+    <th class="tg-wk8r">Oct 2025</th>
+    <th class="tg-oe15">Our paper "IndoorMS: A Multispectral Dataset for Semantic Segmentation in Indoor Scene Understanding" has been accepted to IEEE Sensors Journal.</th>
+  </tr>
   <tr>
     <th class="tg-wk8r">Oct 2024</th>
     <th class="tg-oe15">Our paper "Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste." has been accepted to International Conference on Multimedia Modelling (MMM 2025 CCF-C).</th>
