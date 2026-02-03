@@ -46,9 +46,12 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
       </th>
     </tr>
   <tr>
-      <th class="tg-wk8r">arXiv 2025</th>
-      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.patcog.2024.110532">ClassWise-CRF: Category-Specific Fusion for Enhanced Semantic Segmentation of Remote Sensing Imagery.</a> <br><u>Qinfeng Zhu</u>, Yunxi Jiang, Lei Fan
+      <th class="tg-wk8r">Neural Networks 2026</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1016/j.neunet.2025.108485">ClassWise-CRF: Category-Specific Fusion for Enhanced Semantic Segmentation of Remote Sensing Imagery.</a> <br><u>Qinfeng Zhu</u>, Yunxi Jiang, Lei Fan
         <br> 
+        <a href="https://doi.org/10.1016/j.neunet.2025.108485">
+          <img src="https://img.shields.io/badge/Elsevier-004f80" alt="Elsevier" style="width: auto; height: 20px;"/>
+        </a>
         <a href="[https://arxiv.org/abs/2308.12113](https://doi.org/10.48550/arXiv.2504.21491)">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
         </a> 
@@ -86,6 +89,27 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
 
 ---
 <table class="tg">
+  <tr>
+      <th class="tg-wk8r">arXiv 2026</th>
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2601.07268">From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning.</a> <br>Yusen Chen, <u>Qinfeng Zhu</u>, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2601.07268">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+  
+  <tr>
+      <th class="tg-wk8r">arXiv 2025</th>
+      <th class="tg-oe15"><a href="https://arxiv.org/abs/2509.20918">SwinMamba: A hybrid local-global mamba framework for enhancing semantic segmentation of remotely sensed images.</a> <br><u>Qinfeng Zhu</u>, Han Li, Liang He, Lei Fan
+        <br> 
+        <a href="https://arxiv.org/abs/2509.20918">
+          <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
+        </a>
+      </th>
+    </tr>
+
+  
   <tr>
       <th class="tg-wk8r">MMM 2025</th>
       <th class="tg-oe15"><a href="https://doi.org/10.1007/978-981-96-2054-8_27">Enhancing Environmental Monitoring through Multispectral Imaging: The WasteMS Dataset for Semantic Segmentation of Lakeside Waste.</a> <br><u>Qinfeng Zhu</u>, Ningxin Weng, Lei Fan, Yuanzhi Cai 
@@ -139,8 +163,8 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
     </tr>
 
   <tr>
-      <th class="tg-wk8r">arXiv 2024</th>
-      <th class="tg-oe15"><a href="https://arxiv.org/abs/2412.06211">MSCrackMamba: Leveraging Vision Mamba for Crack Detection in Fused Multispectral Imagery.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Lei Fan
+      <th class="tg-wk8r">IEEE BDAI 2025</th>
+      <th class="tg-oe15"><a href="https://doi.org/10.1109/BDAI66031.2025.11325509">MSCrackMamba: Leveraging Vision Mamba for Crack Detection in Fused Multispectral Imagery.</a> <br><u>Qinfeng Zhu</u>, Yuan Fang, Lei Fan
         <br> 
         <a href="https://arxiv.org/abs/2412.06211">
           <img src="https://img.shields.io/badge/PDF-80000f" alt="PDF" style="width: auto; height: 20px;"/>
@@ -166,6 +190,10 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
 
 <table class="tg">
 <thead>
+  <tr>
+    <th class="tg-wk8r">Dec 2025</th>
+    <th class="tg-oe15">Our paper "ClassWise-CRF: Category-Specific Fusion for Enhanced Semantic Segmentation of Remote Sensing Imagery" has been accepted to Neural Networks 2026 (Top).</th>
+  </tr>
   <tr>
     <th class="tg-wk8r">Oct 2025</th>
     <th class="tg-oe15">Our paper "IndoorMS: A Multispectral Dataset for Semantic Segmentation in Indoor Scene Understanding" has been accepted to IEEE Sensors Journal.</th>
@@ -214,6 +242,8 @@ I am always open to collaboration! Feel free to e-mail me🤩! zhuqinfeng1999@go
 **IEEE Transactions on Intelligent Transportation Systems (T-ITS)**,
 
 **ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS)**,
+
+**Scientific Data, Nature**,
 
 **Pattern Recognition (PR)**,
 
