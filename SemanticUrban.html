@@ -10,25 +10,24 @@ author_profile: false
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="SemanticUrban: a large-scale high-resolution terrestrial laser scanning point cloud dataset of 150 urban scenes with 23 semantic classes for urban scene understanding.">
+  <meta property="og:title" content="SemanticUrban Dataset"/>
+  <meta property="og:description" content="A large-scale high-resolution TLS point cloud dataset of 150 urban scenes with 23 semantic classes for urban scene understanding."/>
+  <meta property="og:url" content="https://zhuqinfeng1999.github.io/SemanticUrban/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="/static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:title" content="SemanticUrban Dataset">
+  <meta name="twitter:description" content="A large-scale high-resolution TLS point cloud dataset of 150 urban scenes with 23 semantic classes.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="/static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Point cloud, Dataset, Urban, Semantic segmentation, SemanticUrban, terrestrial laser scanning, 3D scene understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -64,27 +63,26 @@ author_profile: false
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=VNgUYX4AAAAJ&hl=en&authuser=1" target="_blank">Yuan Fang</a><sup>1,2</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=VNgUYX4AAAAJ&hl=en&authuser=1" target="_blank">Yuan Fang</a><sup>1,2,&dagger;</sup>,</span>
                 <span class="author-block">
-                  <a href="https://zhuqinfeng1999.github.io/" target="_blank">Qinfeng Zhu</a><sup>1,2</sup>,</span>
+                  <a href="https://zhuqinfeng1999.github.io/" target="_blank">Qinfeng Zhu</a><sup>1,2,&dagger;</sup>,</span>
                   <span class="author-block">
                     <a href="https://people.csiro.au/c/y/yuanzhi-cai" target="_blank">Yuanzhi Cai</a><sup>3</sup>,
                   </span>
                   <span class="author-block">
-                  <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank">Lei Fan</a><sup>*,1</sup></span>
+                  <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank">Lei Fan</a><sup>2,*</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><br><sup>1</sup>Xi'an Jiaotong Liverpool University<br><sup>2</sup>University of Liverpool<br><sup>3</sup>CSIRO</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
-                    <span class="eql-cntrb"><small><br><sup>#</sup>The dataset will be publicly available for download after peer review.</small></span>
+                    <span class="author-block"><br><sup>1</sup>University of Liverpool<br><sup>2</sup>Xi'an Jiaotong-Liverpool University<br><sup>3</sup>CSIRO</span>
+                    <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Equal contribution &nbsp;&nbsp; <sup>*</sup>Corresponding Author (Lei.Fan@xjtlu.edu.cn)</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- Paper link (published version) -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417426018610" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -93,9 +91,20 @@ author_profile: false
                       </a>
                     </span>
 
+                  <!-- DOI link -->
+                  <span class="link-block">
+                    <a href="https://doi.org/10.1016/j.eswa.2026.132949" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-doi"></i>
+                    </span>
+                    <span>DOI</span>
+                  </a>
+                </span>
+
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -103,17 +112,6 @@ author_profile: false
                     <span>GitHub</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -154,7 +152,77 @@ author_profile: false
 </section>
 <!-- End paper abstract -->
 
-<!-- Simplified Image Carousel -->
+<!-- Dataset information -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>SemanticUrban</strong> is a large-scale, high-resolution point cloud dataset acquired from <strong>150 urban scenes</strong> using terrestrial laser scanning (TLS), collected from four first-tier cities in China. It contains approximately <strong>4 billion points</strong>, each manually annotated into one of <strong>23 semantic classes</strong>. The dataset provides super-high-resolution geometry, accurate object boundaries, and intensity together with RGB color information, supporting urban scene understanding tasks such as semantic segmentation, mapping, navigation, and urban planning.
+          </p>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <table class="table is-fullwidth is-striped is-hoverable">
+              <tbody>
+                <tr><td><strong>Scenes</strong></td><td>150</td></tr>
+                <tr><td><strong>Number of points</strong></td><td>~4 billion (all labelled)</td></tr>
+                <tr><td><strong>Semantic classes</strong></td><td>23</td></tr>
+                <tr><td><strong>Sensor</strong></td><td>Leica RTC 360 (TLS with HDR imaging)</td></tr>
+                <tr><td><strong>Field of view</strong></td><td>360&deg; horizontal / 300&deg; vertical</td></tr>
+                <tr><td><strong>Per-point information</strong></td><td>3D coordinates, intensity, RGB</td></tr>
+                <tr><td><strong>Official split</strong></td><td>105 train / 15 val / 30 test</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column">
+            <p class="has-text-weight-semibold">23 semantic classes</p>
+            <p class="is-size-6">
+              Distortion, Road, Other man-made terrain, Building, Wall, Fence, Pole, Stairs, Traffic sign, Shrub, Tree, Grass, Soil, Person, Car, Truck, Other vehicle, Bridge, Motorcycle, Bicycle, Clutter and rubbish, Flowerbed, Reflections.
+            </p>
+            <p class="is-size-7 has-text-grey">
+              Unannotated points (label 0) are ignored during training and evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset information -->
+
+<!-- Download -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Download</h2>
+    <div class="content">
+      <p>
+        The dataset and its documentation are hosted on the official GitHub repository. Please visit the repository for download links, data format, and usage instructions.
+      </p>
+    </div>
+    <span class="link-block">
+      <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank"
+      class="external-link button is-medium is-rounded is-dark">
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+      <span>YuanFangFF/SemanticUrban</span>
+    </a>
+    </span>
+    <div class="content" style="margin-top: 1.25rem;">
+      <p class="is-size-6">
+        The released package is the preprocessed benchmark version (voxel size 0.05 m). To request the raw data, please email the corresponding author at <strong>Lei.Fan@xjtlu.edu.cn</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End download -->
+
+
+<!-- Simplified Image -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -163,14 +231,14 @@ author_profile: false
           <!-- Single image displayed -->
           <img src="/static/images/SemanticUrban2.jpg" alt="SemanticUrban Dataset Annotations"/>
           <h2 class="subtitle has-text-centered">
-            Examples of annotated point clouds from Semantic3D and SemanticUrban, visualized in the spherical coordinate system projection: (a) jagged labeling errors at the road and grass boundaries in Semantic3D, (b) accurately labeled object boundaries in SemanticUrban, (c) limited semantic categories in Semantic3D where poles, bicycles, and motorcycles are labelled into a single semantic category, (d) comprehensive semantic categories in SemanticUrban where bicycles, motorcycles, and others differently are categorized separately.
+            Examples of annotated point clouds from Semantic3D and SemanticUrban, visualized in the spherical coordinate system projection: (a) jagged labeling errors at the road and grass boundaries in Semantic3D, (b) accurately labeled object boundaries in SemanticUrban, (c) limited semantic categories in Semantic3D where poles, bicycles, and motorcycles are labelled into a single semantic category, (d) comprehensive semantic categories in SemanticUrban where bicycles, motorcycles, and others are categorized separately.
           </h2>
         </div>
       
     </div>
   </div>
 </section>
-<!-- End Simplified Image Carousel -->
+<!-- End Simplified Image -->
 
 
 <!-- Image carousel -->
@@ -209,28 +277,22 @@ author_profile: false
 </section>
   
 
-<!-- Paper poster -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Paper</h2>
-
-      <iframe  src="/static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{FANG2026132949,
+  title   = {Towards Accurate Urban Scene Understanding using Point Clouds: The SemanticUrban Dataset},
+  author  = {Yuan Fang and Qinfeng Zhu and Yuanzhi Cai and Lei Fan},
+  journal = {Expert Systems with Applications},
+  pages   = {132949},
+  year    = {2026},
+  issn    = {0957-4174},
+  doi     = {https://doi.org/10.1016/j.eswa.2026.132949}
+}</code></pre>
         <p>
-      The dataset and its documentation will be accessed and downloaded from the GitHub link after peer review: 
-      <a href="https://github.com/zhuqinfeng1999/SemanticUrban" target="_blank">https://github.com/zhuqinfeng1999/SemanticUrban</a>.
+      The dataset and its documentation are available at the GitHub repository:
+      <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank">https://github.com/YuanFangFF/SemanticUrban</a>.
     </p>
     </div>
 </section>
@@ -244,7 +306,7 @@ author_profile: false
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
