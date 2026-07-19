@@ -1,5 +1,44 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  color: #18212b;
+  background: #f5f7f8;
+}
+
+.project-nav {
+  position: sticky;
+  z-index: 50;
+  top: 14px;
+  display: flex;
+  width: min(1120px, calc(100% - 28px));
+  align-items: center;
+  justify-content: space-between;
+  margin: 14px auto 30px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 999px;
+  color: #eaf0f6;
+  background: rgba(7, 9, 13, .9);
+  box-shadow: 0 14px 40px rgba(4, 7, 12, .18);
+  backdrop-filter: blur(18px);
+}
+
+.project-nav a { color: inherit; font-size: 12px; }
+.project-nav > div { display: flex; gap: 8px; }
+.project-nav > div a { padding: 8px 13px; border-radius: 999px; }
+.project-nav > div a:hover { color: #071018; background: #9ccbea; }
+.project-nav-brand { display: flex; align-items: center; gap: 9px; padding-right: 12px; font-weight: 600; }
+.project-nav-brand span { display: grid; width: 32px; height: 32px; border-radius: 50%; place-items: center; color: #071018; background: linear-gradient(135deg, #a5e6ed, #6a9dd1); font-family: Georgia, serif; font-style: italic; }
+
+.hero .title { letter-spacing: -.025em; }
+.hero.is-light, .section.hero.is-light { background: #e9eef2; }
+.button.is-dark { background-color: #0b1118; }
+.button.is-dark:hover { background-color: #376e9f; }
+.footer { background-color: #e9eef2; }
+
+@media (max-width: 600px) {
+  .project-nav { top: 8px; margin-top: 8px; }
+  .project-nav-brand { font-size: 0 !important; }
+  .project-nav > div a { padding: 7px 9px; font-size: 10px; }
 }
 
 
@@ -132,6 +171,5 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
 
 
