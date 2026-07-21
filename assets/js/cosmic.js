@@ -130,32 +130,6 @@
 
   document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
-  const countItems = [...document.querySelectorAll('[data-count]')];
-  const animateCount = (item) => {
-    const target = Number(item.dataset.count || 0);
-    const startedAt = performance.now();
-    const duration = 1100;
-    const tick = (now) => {
-      const progress = Math.min((now - startedAt) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      item.textContent = String(Math.round(target * eased)).padStart(2, '0');
-      if (progress < 1) window.requestAnimationFrame(tick);
-    };
-    window.requestAnimationFrame(tick);
-  };
-  if (reducedMotion || !('IntersectionObserver' in window)) {
-    countItems.forEach((item) => { item.textContent = String(item.dataset.count).padStart(2, '0'); });
-  } else {
-    const countObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        animateCount(entry.target);
-        countObserver.unobserve(entry.target);
-      });
-    }, { threshold: .65 });
-    countItems.forEach((item) => countObserver.observe(item));
-  }
-
   document.querySelectorAll('.research-card, .feature-paper, .service-card').forEach((card) => {
     card.addEventListener('pointermove', (event) => {
       const bounds = card.getBoundingClientRect();
