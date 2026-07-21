@@ -42,6 +42,7 @@ permalink: /
       "https://scholar.google.com.hk/citations?user=gG81gcUAAAAJ",
       "https://orcid.org/0009-0002-4847-3555",
       "https://github.com/zhuqinfeng1999",
+      "https://www.linkedin.com/in/qinfengzhu/",
       "https://www.researchgate.net/profile/Qinfeng-Zhu-3"
     ]
   }
@@ -49,6 +50,17 @@ permalink: /
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="loader" data-loader aria-hidden="true">
+    <div class="loader-top"><span>Qinfeng Zhu</span><span>Research portfolio</span></div>
+    <div class="loader-center">
+      <p data-loader-word>Perceive</p>
+      <span>AI · VISION · EARTH</span>
+    </div>
+    <div class="loader-count" data-loader-count>000</div>
+    <div class="loader-progress"><i data-loader-progress></i></div>
+  </div>
+  <div class="page-progress" aria-hidden="true"><i data-page-progress></i></div>
+  <div class="cursor-orb" data-cursor aria-hidden="true"><i></i></div>
   <div class="noise" aria-hidden="true"></div>
   <canvas id="field" aria-hidden="true"></canvas>
 
@@ -73,6 +85,7 @@ permalink: /
 
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-atlas" aria-hidden="true" data-parallax-layer></div>
       <div class="hero-orbit orbit-one" aria-hidden="true"></div>
       <div class="hero-orbit orbit-two" aria-hidden="true"></div>
       <div class="hero-content shell">
@@ -86,9 +99,14 @@ permalink: /
               <a class="button button-primary" href="#publications">Explore research <span aria-hidden="true">↘</span></a>
               <a class="button button-secondary" href="https://scholar.google.com.hk/citations?user=gG81gcUAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
             </div>
+            <div class="hero-socials reveal" aria-label="Research profiles">
+              <a href="https://www.linkedin.com/in/qinfengzhu/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><span>in</span> LinkedIn</a>
+              <a href="https://github.com/zhuqinfeng1999" target="_blank" rel="noreferrer" aria-label="GitHub profile"><span>⌘</span> GitHub</a>
+              <a href="https://orcid.org/0009-0002-4847-3555" target="_blank" rel="noreferrer" aria-label="ORCID profile"><span>iD</span> ORCID</a>
+            </div>
           </div>
 
-          <aside class="profile-card reveal" aria-label="Researcher profile">
+          <aside class="profile-card reveal" aria-label="Researcher profile" data-parallax-card>
             <div class="profile-image-wrap">
               <img src="/images/profile.jpg" alt="Portrait of Qinfeng Zhu" width="741" height="741">
               <span class="profile-scan" aria-hidden="true"></span>
@@ -121,36 +139,42 @@ permalink: /
         </header>
 
         <div class="research-grid">
-          <article class="research-card research-card-wide reveal">
+          <article class="research-card research-card-wide reveal" data-tilt data-focus="10%">
             <span class="card-number">01</span>
-            <div class="signal-map" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <div><h3>Remote Sensing</h3><p>Learning rich representations from aerial, satellite and multispectral observations.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Earth observation</span><h3>Remote Sensing</h3><p>Learning rich representations from aerial, satellite and multispectral observations.</p></div>
           </article>
-          <article class="research-card reveal">
+          <article class="research-card reveal" data-tilt data-focus="28%">
             <span class="card-number">02</span>
-            <div class="cube-mark" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div><h3>3D Computer Vision</h3><p>Point cloud learning and fine-grained urban scene understanding.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Spatial intelligence</span><h3>3D Computer Vision</h3><p>Point cloud learning and fine-grained urban scene understanding.</p></div>
           </article>
-          <article class="research-card reveal">
+          <article class="research-card reveal" data-tilt data-focus="48%">
             <span class="card-number">03</span>
-            <div class="spectrum" aria-hidden="true"></div>
-            <div><h3>Multimodal Fusion</h3><p>Combining complementary sensors to build more robust perception systems.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Sensor synergy</span><h3>Multimodal Fusion</h3><p>Combining complementary sensors to build more robust perception systems.</p></div>
           </article>
-          <article class="research-card research-card-wide reveal">
+          <article class="research-card research-card-wide reveal" data-tilt data-focus="67%">
             <span class="card-number">04</span>
-            <div class="segmentation-tiles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-            <div><h3>Semantic Segmentation</h3><p>Pixel-level and point-level reasoning for indoor, urban and environmental scenes.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Dense prediction</span><h3>Semantic Segmentation</h3><p>Pixel-level and point-level reasoning for indoor, urban and environmental scenes.</p></div>
           </article>
-          <article class="research-card reveal">
+          <article class="research-card reveal" data-tilt data-focus="81%">
             <span class="card-number">05</span>
-            <div class="augmentation-mark" aria-hidden="true">+</div>
-            <div><h3>Data Augmentation</h3><p>Strategies that improve generalization across scarce and imbalanced data.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Robust learning</span><h3>Data Augmentation</h3><p>Strategies that improve generalization across scarce and imbalanced data.</p></div>
           </article>
-          <article class="research-card reveal">
+          <article class="research-card reveal" data-tilt data-focus="96%">
             <span class="card-number">06</span>
-            <div class="network-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-            <div><h3>Deep Learning</h3><p>Modern architectures for reliable and explainable visual intelligence.</p></div>
+            <div class="research-visual" aria-hidden="true"></div>
+            <div class="research-copy"><span class="research-tag">Neural systems</span><h3>Deep Learning</h3><p>Modern architectures for reliable and explainable visual intelligence.</p></div>
           </article>
+        </div>
+        <div class="research-stats reveal" aria-label="Portfolio statistics">
+          <div><strong data-count="6">00</strong><span>Research directions</span></div>
+          <div><strong data-count="9">00</strong><span>Selected publications</span></div>
+          <div><strong data-count="2">00</strong><span>Open datasets</span></div>
+          <div><strong data-count="9">00</strong><span>Conference communities</span></div>
         </div>
       </div>
     </section>
@@ -378,6 +402,7 @@ permalink: /
       </div>
       <footer class="site-footer shell">
         <div class="footer-links">
+          <a href="https://www.linkedin.com/in/qinfengzhu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://scholar.google.com.hk/citations?user=gG81gcUAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a>
           <a href="https://orcid.org/0009-0002-4847-3555" target="_blank" rel="noreferrer">ORCID ↗</a>
           <a href="https://www.researchgate.net/profile/Qinfeng-Zhu-3" target="_blank" rel="noreferrer">ResearchGate ↗</a>
