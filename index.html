@@ -23,7 +23,7 @@ permalink: /
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/cosmic.css">
+  <link rel="stylesheet" href="/assets/css/cosmic.css?v=8">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -85,47 +85,52 @@ permalink: /
 
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-atlas" aria-hidden="true" data-parallax-layer></div>
-      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
-      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
-      <div class="hero-content shell">
-        <p class="eyebrow reveal">Research portfolio · 2026</p>
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 id="hero-title" class="reveal">Qinfeng <em>Zhu</em><span>朱钦峰</span></h1>
-            <p class="hero-role reveal">Ph.D. researcher exploring how machines perceive <span class="role-rotator" data-roles="remote sensing|multimodal worlds|3D environments|semantic structure">remote sensing</span>.</p>
-            <p class="hero-intro reveal">I am a Ph.D. student at Xi'an Jiaotong-Liverpool University and the University of Liverpool, advised by <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank" rel="noreferrer">Dr. Lei Fan</a>. I received an MRes in Computer Science from the University of Liverpool in 2023.</p>
-            <div class="hero-actions reveal">
-              <a class="button button-primary" href="#publications">Explore research <span aria-hidden="true">↘</span></a>
-              <a class="button button-secondary" href="https://scholar.google.com.hk/citations?user=gG81gcUAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-            </div>
-            <div class="hero-socials reveal" aria-label="Research profiles">
-              <a href="https://www.linkedin.com/in/qinfengzhu/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><span>in</span> LinkedIn</a>
-              <a href="https://github.com/zhuqinfeng1999" target="_blank" rel="noreferrer" aria-label="GitHub profile"><span>⌘</span> GitHub</a>
-              <a href="https://orcid.org/0009-0002-4847-3555" target="_blank" rel="noreferrer" aria-label="ORCID profile"><span>iD</span> ORCID</a>
-            </div>
-          </div>
+      <aside class="perception-field reveal" data-perception-field aria-label="Interactive wide-area point-cloud landscape with aerial sensing and an autonomous path">
+        <canvas id="perception-canvas" data-perception-canvas aria-hidden="true"></canvas>
+        <div class="field-caption field-caption-top"><span>Spatial intelligence</span><span>Live scene model</span></div>
+        <div class="field-caption field-caption-bottom"><span>360° · Aerial · LiDAR · Robotics</span><span>Move to explore</span></div>
+        <span class="field-marker marker-geo">Georeferenced scene</span>
+        <span class="field-marker marker-path">Autonomous path</span>
+      </aside>
 
-          <aside class="profile-card reveal" aria-label="Researcher profile" data-parallax-card>
-            <div class="profile-image-wrap">
-              <img src="/images/profile.jpg" alt="Portrait of Qinfeng Zhu" width="741" height="741">
-              <span class="profile-scan" aria-hidden="true"></span>
-            </div>
-            <div class="profile-meta">
-              <div><span>Based in</span><strong>Suzhou, China</strong></div>
-              <div><span>Focus</span><strong>Computer Vision</strong></div>
-            </div>
-          </aside>
+      <div class="hero-content shell">
+        <p class="eyebrow reveal">Research portfolio · Suzhou, China · 2026</p>
+        <div class="hero-copy">
+          <h1 id="hero-title" class="reveal">Qinfeng <em>Zhu</em><span>朱钦峰</span></h1>
+          <p class="hero-role reveal">Ph.D. researcher exploring how machines perceive <span class="role-rotator" data-roles="remote sensing|multimodal worlds|3D environments|semantic structure">remote sensing</span>.</p>
+          <p class="hero-intro reveal">I am a Ph.D. student at Xi'an Jiaotong-Liverpool University and the University of Liverpool, advised by <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank" rel="noreferrer">Dr. Lei Fan</a>. I received an MRes in Computer Science from the University of Liverpool in 2023.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#publications">Explore research <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="https://scholar.google.com.hk/citations?user=gG81gcUAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-socials reveal" aria-label="Research profiles">
+            <a href="https://www.linkedin.com/in/qinfengzhu/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><span>in</span> LinkedIn</a>
+            <a href="https://github.com/zhuqinfeng1999" target="_blank" rel="noreferrer" aria-label="GitHub profile"><span>⌘</span> GitHub</a>
+            <a href="https://orcid.org/0009-0002-4847-3555" target="_blank" rel="noreferrer" aria-label="ORCID profile"><span>iD</span> ORCID</a>
+          </div>
         </div>
 
         <div class="availability reveal">
           <span class="status-dot" aria-hidden="true"></span>
-          <p><strong>Open to collaboration</strong> and seeking a postdoctoral position in 2026/2027.</p>
+          <div class="availability-copy">
+            <p><strong>Open to collaboration.</strong></p>
+            <div class="opportunity-list">
+              <span><b>2026</b> Seeking research internships</span>
+              <span><b>2027</b> Seeking full-time roles in academia or industry after graduation</span>
+            </div>
+          </div>
           <a href="mailto:zhuqinfeng1999@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <a class="scroll-cue" href="#research" aria-label="Scroll to research"><span>Scroll</span><i></i></a>
     </section>
+
+    <div class="home-ticker" aria-label="Research topics">
+      <div class="home-ticker-track">
+        <span>Remote Sensing</span><i>✦</i><span>Panoramic Vision</span><i>✦</i><span>Multimodal AI</span><i>✦</i><span>3D Computer Vision</span><i>✦</i><span>Scene Understanding</span><i>✦</i>
+        <span aria-hidden="true">Remote Sensing</span><i aria-hidden="true">✦</i><span aria-hidden="true">Panoramic Vision</span><i aria-hidden="true">✦</i><span aria-hidden="true">Multimodal AI</span><i aria-hidden="true">✦</i><span aria-hidden="true">3D Computer Vision</span><i aria-hidden="true">✦</i><span aria-hidden="true">Scene Understanding</span><i aria-hidden="true">✦</i>
+      </div>
+    </div>
 
     <section class="section research-section" id="research" aria-labelledby="research-title">
       <div class="shell">
@@ -134,7 +139,7 @@ permalink: /
             <p class="eyebrow"><span></span>Research atlas</p>
             <h2 id="research-title">Understanding the world,<br><em>pixel by point.</em></h2>
           </div>
-          <p>My work connects sensing, representation learning and scene understanding across 2D images and 3D point clouds.</p>
+          <p>My work connects sensing, representation learning and scene understanding across 2D images, panoramic imagery and 3D point clouds.</p>
         </header>
 
         <div class="research-grid">
@@ -148,23 +153,28 @@ permalink: /
             <img class="research-visual" src="/assets/images/research-3d-vision.webp" alt="Luminous point-cloud reconstruction of an urban plaza" loading="lazy">
             <div class="research-copy"><span class="research-tag">Spatial intelligence</span><h3>3D Computer Vision</h3><p>Point cloud learning and fine-grained urban scene understanding.</p></div>
           </article>
-          <article class="research-card reveal" data-tilt data-visual-card>
+          <article class="research-card research-card-panorama reveal" data-tilt data-visual-card>
             <span class="card-number">03</span>
+            <img class="research-visual" src="/assets/images/research-panoramic-vision.webp" alt="A 360-degree panorama wrapped around a luminous sphere with semantic scene overlays" loading="lazy">
+            <div class="research-copy"><span class="research-tag">Sphere-native perception</span><h3>Panoramic Vision</h3><p>Geometry-aware representation learning for distortion-robust, rotation-consistent 360° scene understanding.</p></div>
+          </article>
+          <article class="research-card reveal" data-tilt data-visual-card>
+            <span class="card-number">04</span>
             <img class="research-visual" src="/assets/images/research-multimodal.webp" alt="Multiple sensing modalities converging into one representation" loading="lazy">
             <div class="research-copy"><span class="research-tag">Sensor synergy</span><h3>Multimodal Fusion</h3><p>Combining complementary sensors to build more robust perception systems.</p></div>
           </article>
           <article class="research-card research-card-wide reveal" data-tilt data-visual-card>
-            <span class="card-number">04</span>
+            <span class="card-number">05</span>
             <img class="research-visual" src="/assets/images/research-semantic-segmentation.webp" alt="Aerial city represented as precise semantic regions" loading="lazy">
             <div class="research-copy"><span class="research-tag">Dense prediction</span><h3>Semantic Segmentation</h3><p>Pixel-level and point-level reasoning for indoor, urban and environmental scenes.</p></div>
           </article>
-          <article class="research-card reveal" data-tilt data-visual-card>
-            <span class="card-number">05</span>
+          <article class="research-card research-card-half reveal" data-tilt data-visual-card>
+            <span class="card-number">06</span>
             <img class="research-visual" src="/assets/images/research-data-augmentation.webp" alt="Controlled transformations of a central point-cloud object" loading="lazy">
             <div class="research-copy"><span class="research-tag">Robust learning</span><h3>Data Augmentation</h3><p>Strategies that improve generalization across scarce and imbalanced data.</p></div>
           </article>
-          <article class="research-card reveal" data-tilt data-visual-card>
-            <span class="card-number">06</span>
+          <article class="research-card research-card-half reveal" data-tilt data-visual-card>
+            <span class="card-number">07</span>
             <img class="research-visual" src="/assets/images/research-deep-learning.webp" alt="Layered neural architecture with flowing activations" loading="lazy">
             <div class="research-copy"><span class="research-tag">Neural systems</span><h3>Deep Learning</h3><p>Modern architectures for reliable and explainable visual intelligence.</p></div>
           </article>
@@ -189,44 +199,44 @@ permalink: /
             <p>Yuan Fang<sup>†</sup>, <strong>Qinfeng Zhu<sup>†</sup></strong>, Yuanzhi Cai, Lei Fan <span class="contribution-note">† Equal contribution / co-first authors</span></p>
             <div class="paper-links"><a href="https://doi.org/10.1016/j.eswa.2026.132949">DOI ↗</a><a href="/SemanticUrban/">Dataset page ↗</a><a href="https://github.com/YuanFangFF/SemanticUrban">GitHub ↗</a></div>
           </article>
-          <article class="feature-paper feature-paper-image reveal">
+          <article class="feature-paper feature-paper-image feature-paper-wide reveal">
             <div class="paper-meta"><span>Under review · arXiv</span><time>2026</time></div>
             <figure class="paper-visual"><img src="/assets/images/publications/panoramic-survey.webp" alt="Taxonomy of panoramic scene understanding methods" loading="lazy"></figure>
             <h3><a href="https://arxiv.org/abs/2606.27745" target="_blank" rel="noreferrer">Panoramic Scene Understanding: A Survey from Distortion-Aware Engineering to Sphere-Native Modeling.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Lei Fan</p>
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.27745">PDF ↗</a><span class="status-chip">Under review</span></div>
           </article>
-          <article class="feature-paper feature-paper-image reveal">
+          <article class="feature-paper feature-paper-image feature-paper-wide reveal">
             <div class="paper-meta"><span>Under review · arXiv</span><time>2026</time></div>
             <figure class="paper-visual"><img src="/assets/images/publications/so3uformer.webp" alt="SO3UFormer sphere-native architecture" loading="lazy"></figure>
             <h3><a href="https://arxiv.org/abs/2602.22867" target="_blank" rel="noreferrer">SO3UFormer: Learning Intrinsic Spherical Features for Rotation-Robust Panoramic Dense Prediction.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Yunxi Jiang, Lei Fan</p>
             <div class="paper-links"><a href="https://arxiv.org/abs/2602.22867">PDF ↗</a><a href="https://github.com/zhuqinfeng1999/SO3UFormer">GitHub ↗</a><span class="status-chip">Under review</span></div>
           </article>
-          <article class="feature-paper feature-paper-image reveal">
+          <article class="feature-paper feature-paper-image feature-paper-wide reveal">
             <div class="paper-meta"><span>Pattern Recognition</span><time>2024</time></div>
             <figure class="paper-visual"><img src="/assets/images/publications/point-cloud-augmentation.webp" alt="Examples of point-cloud data augmentation" loading="lazy"></figure>
             <h3><a href="https://doi.org/10.1016/j.patcog.2024.110532" target="_blank" rel="noreferrer">Advancements in Point Cloud Data Augmentation for Deep Learning: A Survey.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Lei Fan, Ningxin Weng</p>
             <div class="paper-links"><a href="https://doi.org/10.1016/j.patcog.2024.110532">DOI ↗</a><a href="https://arxiv.org/abs/2308.12113">PDF ↗</a><a href="https://www.zhihu.com/question/319291048/answer/3500262341">Zhihu ↗</a></div>
           </article>
-          <article class="feature-paper feature-paper-image reveal">
+          <article class="feature-paper feature-paper-image feature-paper-wide reveal">
             <div class="paper-meta"><span>Neural Networks</span><time>2026</time></div>
-            <figure class="paper-visual"><img src="/assets/images/publications/classwise-crf.webp" alt="ClassWise-CRF expert network fusion concept" loading="lazy"></figure>
+            <figure class="paper-visual paper-visual-tall"><img src="/assets/images/publications/classwise-crf.webp" alt="ClassWise-CRF expert network fusion concept" loading="lazy"></figure>
             <h3><a href="https://doi.org/10.1016/j.neunet.2025.108485" target="_blank" rel="noreferrer">ClassWise-CRF: Category-Specific Fusion for Enhanced Semantic Segmentation of Remote Sensing Imagery.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Yunxi Jiang, Lei Fan</p>
             <div class="paper-links"><a href="https://doi.org/10.1016/j.neunet.2025.108485">DOI ↗</a><a href="https://doi.org/10.48550/arXiv.2504.21491">PDF ↗</a></div>
           </article>
           <article class="feature-paper feature-paper-image reveal">
             <div class="paper-meta"><span>IEEE JSTARS</span><time>2024</time></div>
-            <figure class="paper-visual"><img src="/assets/images/publications/mamba-scanning.webp" alt="Directional scanning strategies for remote sensing imagery" loading="lazy"></figure>
+            <figure class="paper-visual paper-visual-tall"><img src="/assets/images/publications/mamba-scanning.webp" alt="Directional scanning strategies for remote sensing imagery" loading="lazy"></figure>
             <h3><a href="https://doi.org/10.1109/JSTARS.2024.3472296" target="_blank" rel="noreferrer">Rethinking Scanning Strategies with Vision Mamba in Semantic Segmentation of Remote Sensing Imagery.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Yuan Fang, Yuanzhi Cai, Cheng Chen, Lei Fan</p>
             <div class="paper-links"><a href="https://doi.org/10.1109/JSTARS.2024.3472296">DOI ↗</a><a href="https://arxiv.org/abs/2405.08493">PDF ↗</a></div>
           </article>
           <article class="feature-paper feature-paper-image reveal">
             <div class="paper-meta"><span>IEEE Sensors Journal</span><time>2025</time></div>
-            <figure class="paper-visual"><img src="/assets/images/publications/indoorms.webp" alt="IndoorMS multispectral dataset collection and training workflow" loading="lazy"></figure>
+            <figure class="paper-visual paper-visual-tall"><img src="/assets/images/publications/indoorms.webp" alt="IndoorMS multispectral dataset collection and training workflow" loading="lazy"></figure>
             <h3><a href="https://doi.org/10.1109/JSEN.2025.3559348" target="_blank" rel="noreferrer">IndoorMS: A Multispectral Dataset for Semantic Segmentation in Indoor Scene Understanding.</a></h3>
             <p><strong>Qinfeng Zhu</strong>, Jingjing Xiao, Lei Fan</p>
             <div class="paper-links"><a href="https://doi.org/10.1109/JSEN.2025.3559348">DOI ↗</a><a href="/IndoorMS/">Project ↗</a></div>
@@ -414,6 +424,6 @@ permalink: /
     </section>
   </main>
 
-  <script src="/assets/js/cosmic.js" defer></script>
+  <script src="/assets/js/cosmic.js?v=8" defer></script>
 </body>
 </html>
