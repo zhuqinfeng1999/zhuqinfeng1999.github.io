@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="SemanticUrban: a large-scale high-resolution terrestrial laser scanning point cloud dataset of 150 urban scenes with 23 semantic classes for urban scene understanding.">
+  <meta property="og:title" content="SemanticUrban Dataset"/>
+  <meta property="og:description" content="A large-scale high-resolution TLS point cloud dataset of 150 urban scenes with 23 semantic classes for urban scene understanding."/>
+  <meta property="og:url" content="https://zhuqinfeng1999.github.io/SemanticUrban/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
+  <meta property="og:image" content="/static/images/SemanticUrban1.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="SemanticUrban Dataset">
+  <meta name="twitter:description" content="A large-scale high-resolution TLS point cloud dataset of 150 urban scenes with 23 semantic classes.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
+  <meta name="twitter:image" content="/static/images/SemanticUrban1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Point cloud, Dataset, Urban, Semantic segmentation, SemanticUrban, terrestrial laser scanning, 3D scene understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Towards Accurate Urban Scene Understanding using Point Clouds: The SemanticUrban Dataset</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/css/bulma.min.css">
+  <link rel="stylesheet" href="/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="/static/css/icons.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="/static/js/bulma-carousel.min.js"></script>
+  <script src="/static/js/bulma-slider.min.js"></script>
+  <script src="/static/js/index.js"></script>
+</head>
+<body>
+
+  <nav class="project-nav" aria-label="Project navigation">
+    <a class="project-nav-brand" href="/"><span>QZ</span> Qinfeng Zhu</a>
+    <div><a href="/projects/">All projects</a><a href="mailto:zhuqinfeng1999@gmail.com">Contact ↗</a></div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Towards Accurate Urban Scene Understanding using Point Clouds: The SemanticUrban Dataset</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=VNgUYX4AAAAJ&hl=en&authuser=1" target="_blank">Yuan Fang</a><sup>1,2,&dagger;</sup>,</span>
+                <span class="author-block">
+                  <a href="https://zhuqinfeng1999.github.io/" target="_blank">Qinfeng Zhu</a><sup>1,2,&dagger;</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://people.csiro.au/c/y/yuanzhi-cai" target="_blank">Yuanzhi Cai</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                  <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank">Lei Fan</a><sup>2,*</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><br><sup>1</sup>University of Liverpool<br><sup>2</sup>Xi'an Jiaotong-Liverpool University<br><sup>3</sup>CSIRO</span>
+                    <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Equal contribution &nbsp;&nbsp; <sup>*</sup>Corresponding Author (Lei.Fan@xjtlu.edu.cn)</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Paper link (published version) -->
+                      <span class="link-block">
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417426018610" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- DOI link -->
+                  <span class="link-block">
+                    <a href="https://doi.org/10.1016/j.eswa.2026.132949" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-doi"></i>
+                    </span>
+                    <span>DOI</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="/static/images/SemanticUrban1.jpg" alt="Teaser Image" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        Example point clouds from the SemanticUrban dataset: intensity values (left), RGB colors (middle) and class labels (right). 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Point clouds are essential data representations of three-dimensional surfaces of real-world scenes and objects. With the recent developments in urban scene understanding, there is a substantial demand for semantic point cloud datasets that represent urban scenes with high semantic accuracy and fine semantic details. However, existing benchmark datasets of this kind are very limited, and their semantic information is either not accurate enough or lacks detailed semantic classification. In this paper, we present SemanticUrban, a large-scale high-resolution point cloud dataset acquired from 150 urban scenes using terrestrial laser scanning. SemanticUrban features super-high-resolution point clouds and highly accurate semantic categorizations, classifying each data point into one of 23 defined classes. We conduct extensive evaluations on SemanticUrban using representative deep learning methods, followed by a detailed discussion of our findings. Additionally, we highlight main challenges associated with the SemanticUrban dataset, motivating future research to develop new approaches for tackling these issues.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Dataset information -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>SemanticUrban</strong> is a large-scale, high-resolution point cloud dataset acquired from <strong>150 urban scenes</strong> using terrestrial laser scanning (TLS), collected from four first-tier cities in China. It contains approximately <strong>4 billion points</strong>, each manually annotated into one of <strong>23 semantic classes</strong>. The dataset provides super-high-resolution geometry, accurate object boundaries, and intensity together with RGB color information, supporting urban scene understanding tasks such as semantic segmentation, mapping, navigation, and urban planning.
+          </p>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <table class="table is-fullwidth is-striped is-hoverable">
+              <tbody>
+                <tr><td><strong>Scenes</strong></td><td>150</td></tr>
+                <tr><td><strong>Number of points</strong></td><td>~4 billion (all labelled)</td></tr>
+                <tr><td><strong>Semantic classes</strong></td><td>23</td></tr>
+                <tr><td><strong>Sensor</strong></td><td>Leica RTC 360 (TLS with HDR imaging)</td></tr>
+                <tr><td><strong>Field of view</strong></td><td>360&deg; horizontal / 300&deg; vertical</td></tr>
+                <tr><td><strong>Per-point information</strong></td><td>3D coordinates, intensity, RGB</td></tr>
+                <tr><td><strong>Official split</strong></td><td>105 train / 15 val / 30 test</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column">
+            <p class="has-text-weight-semibold">23 semantic classes</p>
+            <p class="is-size-6">
+              Distortion, Road, Other man-made terrain, Building, Wall, Fence, Pole, Stairs, Traffic sign, Shrub, Tree, Grass, Soil, Person, Car, Truck, Other vehicle, Bridge, Motorcycle, Bicycle, Clutter and rubbish, Flowerbed, Reflections.
+            </p>
+            <p class="is-size-7 has-text-grey">
+              Unannotated points (label 0) are ignored during training and evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset information -->
+
+<!-- Download -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Download</h2>
+    <div class="content">
+      <p>
+        The dataset and its documentation are hosted on the official GitHub repository. Please visit the repository for download links, data format, and usage instructions.
+      </p>
+    </div>
+    <span class="link-block">
+      <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank"
+      class="external-link button is-medium is-rounded is-dark">
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+      <span>YuanFangFF/SemanticUrban</span>
+    </a>
+    </span>
+    <div class="content" style="margin-top: 1.25rem;">
+      <p class="is-size-6">
+        The released package is the preprocessed benchmark version (voxel size 0.05 m). To request the raw data, please email the corresponding author at <strong>Lei.Fan@xjtlu.edu.cn</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End download -->
+
+
+<!-- Simplified Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+        <div class="item">
+          <!-- Single image displayed -->
+          <img src="/static/images/SemanticUrban2.jpg" alt="SemanticUrban Dataset Annotations"/>
+          <h2 class="subtitle has-text-centered">
+            Examples of annotated point clouds from Semantic3D and SemanticUrban, visualized in the spherical coordinate system projection: (a) jagged labeling errors at the road and grass boundaries in Semantic3D, (b) accurately labeled object boundaries in SemanticUrban, (c) limited semantic categories in Semantic3D where poles, bicycles, and motorcycles are labelled into a single semantic category, (d) comprehensive semantic categories in SemanticUrban where bicycles, motorcycles, and others are categorized separately.
+          </h2>
+        </div>
+      
+    </div>
+  </div>
+</section>
+<!-- End Simplified Image -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Annotation Examples</h2> <!-- Added title -->
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="/static/images/example2.jpg" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="/static/images/example1.jpg" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="/static/images/example3.jpg" alt="MY ALT TEXT"/>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="/static/images/example4.jpg" alt="MY ALT TEXT"/>
+    </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="/static/images/example5.jpg" alt="MY ALT TEXT"/>
+    </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="/static/images/example6.jpg" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+  
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{FANG2026132949,
+  title   = {Towards Accurate Urban Scene Understanding using Point Clouds: The SemanticUrban Dataset},
+  author  = {Yuan Fang and Qinfeng Zhu and Yuanzhi Cai and Lei Fan},
+  journal = {Expert Systems with Applications},
+  pages   = {132949},
+  year    = {2026},
+  issn    = {0957-4174},
+  doi     = {https://doi.org/10.1016/j.eswa.2026.132949}
+}</code></pre>
+        <p>
+      The dataset and its documentation are available at the GitHub repository:
+      <a href="https://github.com/YuanFangFF/SemanticUrban" target="_blank">https://github.com/YuanFangFF/SemanticUrban</a>.
+    </p>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
