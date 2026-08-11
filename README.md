@@ -34,4 +34,15 @@ Then open `http://127.0.0.1:4173/`.
 
 Publication metadata, links, research directions and the timeline are maintained in [`assets/data/research.json`](assets/data/research.json). The homepage's editorially selected layouts remain in [`index.html`](index.html).
 
-© Qinfeng Zhu. All rights reserved unless otherwise stated by an individual research artifact.
+## License
+
+The website code and visual design are available for personal, academic,
+educational, research, and other non-commercial use under the
+[Qinfeng Zhu Portfolio Non-Commercial License 1.0](LICENSE).
+
+Commercial use—including paid website work, resale, commercial product
+integration, or company marketing—requires prior written permission. Personal
+data, the portrait, CV, publication figures, and third-party research artifacts
+are not licensed for reuse.
+
+© Qinfeng Zhu.

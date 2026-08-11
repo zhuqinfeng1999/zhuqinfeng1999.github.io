@@ -158,6 +158,12 @@
 .explorer-readout { max-width: 390px; color: #8190a1; font-family: var(--mono); font-size: 7px; letter-spacing: .08em; line-height: 1.65; text-align: right; text-transform: uppercase; }
 .explorer-readout strong { display: block; color: #dbe3eb; font-weight: 400; }
 .explorer-hint { position: absolute; z-index: 4; top: 50%; right: 24px; color: #697789; font-family: var(--mono); font-size: 7px; letter-spacing: .1em; writing-mode: vertical-rl; text-transform: uppercase; transform: translateY(-50%); }
+.explorer-template-credit { position: fixed; z-index: 5; top: 70px; right: 28px; display: grid; padding: 9px 11px; border: 1px solid rgba(121,243,238,.18); border-radius: 14px; grid-template-columns: 30px auto; gap: 10px; align-items: center; color: rgba(240,247,247,.88); background: rgba(4,10,15,.62); box-shadow: 0 14px 38px rgba(0,0,0,.18); backdrop-filter: blur(16px); font-family: var(--mono); text-decoration: none; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.explorer-template-credit::before { width: 19px; height: 19px; margin: auto; content: ""; background: currentColor; -webkit-mask: url("/assets/images/github-mark.svg") center / contain no-repeat; mask: url("/assets/images/github-mark.svg") center / contain no-repeat; }
+.explorer-template-credit span { display: grid; gap: 2px; }
+.explorer-template-credit small { color: var(--cyan); font-size: 6px; letter-spacing: .15em; text-transform: uppercase; }
+.explorer-template-credit strong { font-size: 8px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+.explorer-template-credit:hover, .explorer-template-credit:focus-visible { color: var(--ink); border-color: rgba(121,243,238,.5); background: rgba(8,19,26,.82); transform: translateY(-1px); }
 
 @media (max-width: 980px) {
   .publication-entry, .publication-entry.has-image { grid-template-columns: 120px minmax(0,1fr); }
@@ -206,4 +212,6 @@
   .explorer-mode { flex: 0 0 auto; }
   .explorer-readout { max-width: none; text-align: left; }
   .explorer-hint { display: none; }
+  .explorer-template-credit { top: 62px; right: 16px; padding: 8px 9px; grid-template-columns: 24px auto; gap: 8px; }
+  .explorer-template-credit strong { font-size: 7px; }
 }
