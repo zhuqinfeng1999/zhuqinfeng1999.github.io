@@ -18,7 +18,13 @@
 .dataset-hero::after { position: absolute; z-index: 1; inset: 0; content: ""; opacity: .28; background-image: linear-gradient(rgba(var(--dataset-accent),.09) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--dataset-accent),.09) 1px, transparent 1px); background-size: 72px 72px; mask-image: radial-gradient(circle at 72% 48%, #000, transparent 70%); pointer-events: none; }
 .dataset-hero-media { position: absolute; z-index: 0; inset: -3%; overflow: hidden; }
 .dataset-hero-media img { width: 100%; height: 100%; object-fit: cover; opacity: .45; filter: grayscale(1) invert(1) contrast(1.35); transform: scale(1.03); animation: dataset-drift 16s ease-in-out infinite alternate; }
-.indoor-ms .dataset-hero-media img { object-position: 78% 48%; opacity: .42; filter: invert(1) hue-rotate(180deg) saturate(.8) contrast(1.22); }
+.indoor-ms .dataset-hero-media { inset: 9% -3% 5% auto; width: min(65vw, 980px); overflow: visible; }
+.indoor-ms-hero-sequence { display: grid; height: 100%; gap: clamp(8px, 1vw, 14px); grid-template-rows: repeat(3, minmax(0, 1fr)); filter: drop-shadow(0 28px 55px rgba(0,0,0,.34)); mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.56) 13%, #000 31%, #000 96%, transparent 100%); transform: rotate(-1deg); transform-origin: right center; }
+.indoor-ms-hero-row { position: relative; display: block; overflow: hidden; opacity: .57; background-image: url('/static/images/IndoorMS2.jpg'); background-repeat: no-repeat; background-size: 100% auto; filter: invert(1) hue-rotate(180deg) saturate(.82) contrast(1.2); }
+.indoor-ms-hero-row::after { position: absolute; inset: 0; content: ""; border-top: 1px solid rgba(var(--dataset-accent),.16); border-bottom: 1px solid rgba(var(--dataset-accent-2),.08); background: linear-gradient(90deg, rgba(255,255,255,.2), transparent 32%, rgba(255,255,255,.03)); pointer-events: none; }
+.indoor-ms-hero-row.row-one { background-position: center top; }
+.indoor-ms-hero-row.row-two { background-position: center 45%; }
+.indoor-ms-hero-row.row-three { background-position: center 90%; }
 .dataset-hero-glow { position: absolute; z-index: 0; top: 13%; right: 3%; width: min(62vw, 930px); aspect-ratio: 1; border-radius: 50%; opacity: .36; background: radial-gradient(circle, rgba(var(--dataset-accent),.2), rgba(var(--dataset-accent-2),.08) 37%, transparent 69%); filter: blur(25px); pointer-events: none; }
 @keyframes dataset-drift { to { transform: scale(1.07) translate3d(-.8%, .6%, 0); } }
 
@@ -152,7 +158,9 @@
   .dataset-hero::before { background: linear-gradient(180deg, rgba(4,6,9,.48), rgba(4,6,9,.91) 45%, rgba(4,6,9,.98) 100%); }
   .dataset-hero-media { inset: 0; height: 53%; }
   .dataset-hero-media img { object-position: 64% 36%; opacity: .42; }
-  .indoor-ms .dataset-hero-media img { object-position: center 24%; }
+  .indoor-ms .dataset-hero-media { inset: 74px -6% auto auto; width: 112%; height: 38%; }
+  .indoor-ms-hero-sequence { gap: 6px; mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 94%, transparent 100%); transform: none; }
+  .indoor-ms-hero-row { opacity: .5; }
   .dataset-hero-topline { margin-bottom: 230px; }
   .dataset-hero-topline span:last-child { display: none; }
   .dataset-title { font-size: clamp(78px, 25vw, 108px); line-height: .68; }
