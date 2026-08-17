@@ -206,7 +206,7 @@
       { title: 'Publications Library', detail: 'Search, filter and copy BibTeX', href: '/publications/', type: 'Page' },
       { title: 'Projects', detail: 'Datasets, methods and research maps', href: '/projects/', type: 'Page' },
       { title: 'Spatial Intelligence Explorer', detail: 'Compare four sensing spaces in one interactive scene', href: '/explorer/', type: 'Explorer' },
-      { title: 'CV — July 2026', detail: 'Download PDF', href: '/assets/docs/Qinfeng_Zhu_CV_July_2026.pdf', type: 'Document' }
+      { title: 'CV — August 2026', detail: 'Download PDF', href: '/assets/docs/Qinfeng_Zhu_CV.pdf', type: 'Document' }
     ];
     let visible = [];
     let activeIndex = 0;
