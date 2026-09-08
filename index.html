@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/cosmic.css?v=15">
+  <link rel="stylesheet" href="/assets/css/refinement.css?v=20260908-shared-2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -77,7 +78,7 @@
 
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-world" role="img" aria-label="An interactive urban LiDAR point cloud with a movable semantic inspection probe">
+      <div class="hero-world" role="group" aria-label="Interactive research illustration with four sensing modes">
         <canvas data-spatial-world data-scene="hero" data-mode="pointcloud" aria-hidden="true"></canvas>
       </div>
       <div class="world-hud world-hud-top"><span><b data-world-status>Urban point cloud</b><small data-world-interaction>Move pointer · click to query</small></span><em>Interactive</em></div>
@@ -96,7 +97,7 @@
         <div class="hero-copy">
           <p class="eyebrow reveal">Research portfolio · Suzhou, China · 2026</p>
           <h1 id="hero-title" class="hero-name reveal">Qinfeng <em>Zhu</em><small>朱钦峰</small></h1>
-          <p class="hero-role reveal">Ph.D. researcher exploring how machines perceive <span class="role-rotator" data-roles="remote sensing|panoramic worlds|3D environments|semantic structure">remote sensing</span>.</p>
+          <p class="hero-role reveal">Ph.D. researcher exploring how machines perceive <span class="role-rotator" data-roles="3D environments|our planet|panoramic worlds|semantic structure">3D environments</span>.</p>
           <p class="hero-intro reveal">I am a Ph.D. student at Xi'an Jiaotong-Liverpool University and the University of Liverpool, advised by <a href="https://scholar.xjtlu.edu.cn/en/persons/LeiFan" target="_blank" rel="noreferrer">Dr. Lei Fan</a>. I received an MRes in Computer Science from the University of Liverpool in 2023.</p>
           <div class="hero-actions reveal">
             <a class="button button-primary" href="/research/">Explore the atlas <span aria-hidden="true">↘</span></a>
@@ -306,6 +307,7 @@
   </main>
 
   <script src="/assets/js/cosmic.js?v=12" defer></script>
-  <script src="/assets/js/spatial-world.js?v=14" defer></script>
+  <script src="/assets/js/spatial-cloud.js?v=20260908-shared-2" defer></script>
+  <script src="/assets/js/spatial-world.js?v=20260908-shared-2" defer></script>
 </body>
 </html>

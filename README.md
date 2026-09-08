@@ -17,7 +17,7 @@ The site is dependency-free at build time and is served directly by GitHub Pages
 
 - semantic HTML pages
 - custom CSS in `assets/css/`
-- vanilla JavaScript and Canvas interactions in `assets/js/`
+- vanilla JavaScript, a shared WebGL sensing scene and Canvas 2D fallback in `assets/js/`
 - structured research content in `assets/data/research.json`
 
 ## Local preview
@@ -31,6 +31,18 @@ python -m http.server 4173
 Then open `http://127.0.0.1:4173/`.
 
 ## Content updates
+
+One synthetic urban district is generated locally in `assets/js/spatial-cloud.js`.
+The same GPU geometry supports point-cloud inspection, regional sampling,
+spherical gaze and road-constrained navigation, with smoothly connected cameras.
+Drag to orbit, or use the active mode's pointer/tap interaction. Optional semantic
+color, pause and reset controls are shared across the four views. Arrow keys
+interact with the active mode; Enter selects, holds or navigates; Space pauses;
+R resets. Reduced motion and offscreen suspension are supported.
+`assets/js/spatial-world.js` coordinates the interface and retains a Canvas 2D
+fallback when WebGL is unavailable. These are illustrative models, not captured
+measurements or inference results. The shared visual refinement layer is
+`assets/css/refinement.css`, loaded after the page's base styles.
 
 Publication metadata, links, research directions and the timeline are maintained in [`assets/data/research.json`](assets/data/research.json). The homepage's editorially selected layouts remain in [`index.html`](index.html).
 
