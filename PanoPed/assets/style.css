@@ -94,6 +94,11 @@ h2{font-size:clamp(42px,5.1vw,68px);margin-bottom:0}
 .support-banner h3{font:400 27px/1.2 var(--serif);margin:12px 0 5px}
 .support-banner p{font-size:12px;line-height:1.6;color:#53686a;margin:0;max-width:660px}
 .support-banner>a{white-space:nowrap;color:#0a777a;font-size:12px;font-weight:750}
+.support-gallery{margin:24px 0 0;background:#fff;padding:17px 17px 14px;box-shadow:0 18px 40px rgba(7,39,43,.07)}
+.support-gallery img{width:100%;height:auto}
+.support-gallery figcaption{margin-top:11px;border-top:1px solid #dde6e5;padding-top:9px;color:#53696b;font-size:12px;line-height:1.55}
+.support-gallery figcaption a{color:#0a777a;font-weight:750;white-space:nowrap}
+.support-gallery figcaption a:hover{text-decoration:underline}
 .method-section{background:#071a23}
 .method-figure{background:#f8faf9;margin:0;padding:24px 27px 16px;border:1px solid #e0e9e8}
 .method-figure img{width:100%;max-height:455px;object-fit:contain}
