@@ -52,17 +52,17 @@
         </div>
         <div class="intro-grid">
           <div class="video-shell">
-            <video controls playsinline preload="metadata" poster="assets/images/drone-poster.webp" aria-label="PanoPed video introduction, draft">
-              <source src="assets/video/intro-draft.mp4" type="video/mp4">
+            <video controls playsinline preload="metadata" poster="assets/images/intro-cover.webp" aria-label="PanoPed video introduction">
+              <source src="assets/video/intro.mp4" type="video/mp4">
               Your browser does not support video playback.
             </video>
-            <div class="video-caption"><span class="live-line"></span><strong>Video introduction · 47 sec</strong><span>Actual release footage and UE platform stills · original instrumental audio</span></div>
+            <div class="video-caption"><span class="live-line"></span><strong>Video introduction</strong><span>UE third-person illustrations + released ERP footage · original instrumental audio</span></div>
           </div>
           <aside class="intro-note">
             <span class="mini-index">Inside the panorama</span>
             <h3>Motion, labels, and the same scene from every direction.</h3>
-            <p>Watch real ERP footage from fixed, quadruped and drone rigs, released synthetic annotations, three consented real settings, and the Sextant architecture.</p>
-            <p class="fineprint">Preview status: third-person drone takeoff and quadruped-walk footage is still being sourced. The opening UE platform images are labeled static renders; no motion was fabricated.</p>
+            <p>Watch third-person UE views of a drone taking off and a quadruped walking, followed by released synthetic ERP frames and annotations, real scenes, and the Sextant architecture.</p>
+            <p class="fineprint">The third-person views are illustrative UE re-renders, not tracking frames in the released sequences. The real segment opens with the tiered R-03 plaza.</p>
           </aside>
         </div>
       </div>
@@ -79,21 +79,23 @@
               <h3>Controlled worlds.<br>Uncontrolled viewpoints.</h3>
               <p>60 one-minute sequences and 108,000 RGB frames, with fixed, quadruped-mounted and drone-mounted cameras. Released annotations include visible support, spherical regions, identities, depth and scene state.</p>
               <div class="card-stats"><div><strong>30</strong><span>fixed</span></div><div><strong>18</strong><span>quadruped</span></div><div><strong>12</strong><span>drone</span></div></div>
+              <p class="license-note"><strong>License:</strong> PanoPed-S Research-Only Data License v1.0.0. Noncommercial research/education; access requires acceptance of the release terms. Source asset reconstruction and redistribution are prohibited.</p>
               <a class="dataset-link" href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing" target="_blank" rel="noopener noreferrer">View release packages <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article class="dataset-card real-card">
-            <div class="dataset-photo" role="img" aria-label="Consented unpixelated real ERP plaza scene"></div>
+            <div class="dataset-photo" role="img" aria-label="Consented real ERP view of the multi-level R-03 plaza"></div>
             <div class="dataset-body">
               <div class="card-meta"><span class="category category-r">PanoPed-R</span><span>Consented real video · v0.9.0</span></div>
               <h3>Real people.<br>Real panoramic ambiguity.</h3>
               <p>Five fixed-camera sequences and 28,002 frames across corridors and open plazas. Three sequences have dense identity and full-sphere Box-fit annotations; the other two are released as unlabeled video.</p>
               <div class="card-stats"><div><strong>5</strong><span>sequences</span></div><div><strong>16,247</strong><span>labeled frames</span></div><div><strong>3</strong><span>LOSO folds</span></div></div>
+              <p class="license-note"><strong>License:</strong> PanoPed-R Research-Only Data License v0.9.0. Noncommercial research/education; access requires acceptance of the release terms. Identification and named-person surveillance uses are prohibited; secure storage is required.</p>
               <a class="dataset-link" href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing" target="_blank" rel="noopener noreferrer">View release packages <span aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
-        <div class="support-banner"><div><span class="category category-a">Auxiliary target</span><h3>PanoPed-R-Support-Auto</h3><p>An automatically derived visible-support target for source-only transfer analysis. It remains separate from the human-annotated real Box-fit benchmark.</p></div><a href="https://drive.google.com/drive/folders/1zpZPpaFzvKcGMS_wfT3lX-uariYtm4Cg?usp=sharing" target="_blank" rel="noopener noreferrer">Explore Support-Auto <span aria-hidden="true">↗</span></a></div>
+        <div class="support-banner"><div><span class="category category-a">Auxiliary target</span><h3>PanoPed-R-Support-Auto</h3><p>An automatically derived visible-support target for source-only transfer analysis. It remains separate from the human-annotated real Box-fit benchmark and carries the PanoPed-R Research-Only Data License v0.9.0.</p></div><a href="https://drive.google.com/drive/folders/1zpZPpaFzvKcGMS_wfT3lX-uariYtm4Cg?usp=sharing" target="_blank" rel="noopener noreferrer">Explore Support-Auto <span aria-hidden="true">↗</span></a></div>
         <figure class="support-gallery"><a href="assets/images/gallery-auto.webp" target="_blank" rel="noopener" aria-label="Open the full-size PanoPed gallery"><img src="assets/images/gallery-auto.webp" loading="lazy" alt="Three synthetic panoramas followed by three consented real panoramas with frozen automatic visible-support overlays"></a><figcaption>Fixed, quadruped, and drone views above; real corridors and plazas below. Real colored regions come from box-prompted automatic Support-Auto masks, not hand-drawn pixel labels. <a href="assets/images/gallery-auto.webp" target="_blank" rel="noopener">View full-size figure ↗</a></figcaption></figure>
       </div>
     </section>
@@ -134,7 +136,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a><p>Tracking people on the full sphere.</p></div><div class="footer-authors"><strong>Qinfeng Zhu · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</strong><p>Correspondence: <a href="mailto:lei.fan@xjtlu.edu.cn">lei.fan@xjtlu.edu.cn</a></p></div><div class="footer-links"><a href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing">Synthetic data ↗</a><a href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing">Real data ↗</a><span>Paper and code links open with the preprint.</span></div></div><div class="container footer-bottom"><span>© 2026 PanoPed authors</span><span>Unpublished preview · not indexed</span></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a><p>Tracking people on the full sphere.</p></div><div class="footer-authors"><strong>Qinfeng Zhu · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</strong><p>Correspondence: <a href="mailto:lei.fan@xjtlu.edu.cn">lei.fan@xjtlu.edu.cn</a></p></div><div class="footer-links"><a href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing">Synthetic data ↗</a><a href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing">Real data ↗</a><a href="https://github.com/zhuqinfeng1999/PanoPed#data-licenses">Release licenses ↗</a><span>Paper and code links open with the preprint.</span></div></div><div class="container footer-bottom"><span>© 2026 PanoPed authors</span><span>Unpublished preview · not indexed</span></div></footer>
   <script src="./assets/main.js" defer></script>
 </body>
 </html>
