@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#06141d">
+  <meta name="description" content="PanoPed: full-sphere pedestrian tracking from fixed and moving cameras, with the Sextant angular localization readout.">
+  <title>PanoPed — Tracking people on the full sphere</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PanoPed, back to top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#datasets">Datasets</a>
+      <a href="#method">Sextant</a>
+      <a href="#scenes">Scenes</a>
+    </nav>
+    <span class="header-status"><span class="status-dot"></span> Unpublished preview</span>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Unreal Engine panoramic street scene with drone-mounted camera annotations"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Panoramic pedestrian tracking</p>
+        <h1 id="hero-title">Every direction.<br><em>Every identity.</em></h1>
+        <p class="hero-description">PanoPed brings people tracking onto the full sphere, from stationary cameras to quadruped and drone viewpoints. Sextant reads visual evidence already inside a frozen tracker to place each person more precisely.</p>
+        <div class="hero-actions">
+          <span class="button button-primary" aria-disabled="true" title="The paper link will be added when the arXiv preprint is online">Paper <span class="button-note">coming soon</span></span>
+          <span class="button button-outline" aria-disabled="true" title="The repository is private until the preprint is online">Code <span class="button-note">private preview</span></span>
+          <a class="button button-text" href="#datasets">Explore the data <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom container" aria-label="Benchmark at a glance">
+        <div><strong>60</strong><span>synthetic sequences</span></div>
+        <div><strong>5</strong><span>real sequences</span></div>
+        <div><strong>34,692</strong><span>Sextant parameters</span></div>
+        <p>Fixed <span>·</span> Quadruped <span>·</span> Drone</p>
+      </div>
+    </section>
+
+    <section id="overview" class="section intro-section">
+      <div class="container">
+        <div class="section-heading section-heading-grid">
+          <div><p class="kicker">01 / The idea</p><h2>A 360° view needs<br><em>a spherical answer.</em></h2></div>
+          <p>Planar boxes are useful detector outputs, yet they cannot fully describe the visible angular support of a person on a sphere. PanoPed pairs a synthetic benchmark with consented real scenes and evaluates tracking in native spherical regions.</p>
+        </div>
+        <div class="intro-grid">
+          <div class="video-shell">
+            <video controls playsinline preload="metadata" poster="assets/images/drone-poster.webp" aria-label="PanoPed video introduction, draft">
+              <source src="assets/video/intro-draft.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <div class="video-caption"><span class="live-line"></span><strong>Video introduction · 47 sec</strong><span>Actual release footage and UE platform stills · original instrumental audio</span></div>
+          </div>
+          <aside class="intro-note">
+            <span class="mini-index">Inside the panorama</span>
+            <h3>Motion, labels, and the same scene from every direction.</h3>
+            <p>Watch real ERP footage from fixed, quadruped and drone rigs, released synthetic annotations, three consented real settings, and the Sextant architecture.</p>
+            <p class="fineprint">Preview status: third-person drone takeoff and quadruped-walk footage is still being sourced. The opening UE platform images are labeled static renders; no motion was fabricated.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="datasets" class="section data-section">
+      <div class="container">
+        <div class="section-heading compact"><p class="kicker">02 / The benchmark</p><h2>One sphere. <em>Two worlds.</em></h2><p>Aligned evaluation goals across synthetic and real panoramas, without pretending their annotations have the same origin.</p></div>
+        <div class="dataset-grid">
+          <article class="dataset-card synthetic-card">
+            <div class="dataset-photo" role="img" aria-label="Synthetic ERP frame from a moving quadruped camera"></div>
+            <div class="dataset-body">
+              <div class="card-meta"><span class="category category-s">PanoPed-S</span><span>Unreal Engine · v1.0.0</span></div>
+              <h3>Controlled worlds.<br>Uncontrolled viewpoints.</h3>
+              <p>60 one-minute sequences and 108,000 RGB frames, with fixed, quadruped-mounted and drone-mounted cameras. Released annotations include visible support, spherical regions, identities, depth and scene state.</p>
+              <div class="card-stats"><div><strong>30</strong><span>fixed</span></div><div><strong>18</strong><span>quadruped</span></div><div><strong>12</strong><span>drone</span></div></div>
+              <a class="dataset-link" href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing" target="_blank" rel="noopener noreferrer">View release packages <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="dataset-card real-card">
+            <div class="dataset-photo" role="img" aria-label="Consented unpixelated real ERP plaza scene"></div>
+            <div class="dataset-body">
+              <div class="card-meta"><span class="category category-r">PanoPed-R</span><span>Consented real video · v0.9.0</span></div>
+              <h3>Real people.<br>Real panoramic ambiguity.</h3>
+              <p>Five fixed-camera sequences and 28,002 frames across corridors and open plazas. Three sequences have dense identity and full-sphere Box-fit annotations; the other two are released as unlabeled video.</p>
+              <div class="card-stats"><div><strong>5</strong><span>sequences</span></div><div><strong>16,247</strong><span>labeled frames</span></div><div><strong>3</strong><span>LOSO folds</span></div></div>
+              <a class="dataset-link" href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing" target="_blank" rel="noopener noreferrer">View release packages <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="support-banner"><div><span class="category category-a">Auxiliary target</span><h3>PanoPed-R-Support-Auto</h3><p>An automatically derived visible-support target for source-only transfer analysis. It remains separate from the human-annotated real Box-fit benchmark.</p></div><a href="https://drive.google.com/drive/folders/1zpZPpaFzvKcGMS_wfT3lX-uariYtm4Cg?usp=sharing" target="_blank" rel="noopener noreferrer">Explore Support-Auto <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section id="method" class="section method-section">
+      <div class="container">
+        <div class="section-heading section-heading-grid"><div><p class="kicker">03 / The method</p><h2>A small readout for<br><em>the whole sphere.</em></h2></div><p>Sextant reuses the detector's frozen visual query. It predicts a local angular correction while the tracker's identities, scores, detections and history remain untouched.</p></div>
+        <figure class="method-figure"><img src="assets/images/method.png" loading="lazy" alt="Sextant diagram showing a frozen detector and identity stream, a 34,692-parameter angular localization head, and a native spherical region"><figcaption>Frozen tracker → query-conditioned readout → native spherical localization. The identity branch bypasses Sextant.</figcaption></figure>
+        <div class="method-details"><div><span>01</span><h3>Read</h3><p>256D detector query, initial geometry and confidence.</p></div><div><span>02</span><h3>Correct</h3><p>Lightweight 262→128→4 head, trained on native support targets.</p></div><div><span>03</span><h3>Preserve</h3><p>Final localization changes; scores, identities and tracker state do not.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section results-section" aria-labelledby="results-heading">
+      <div class="container"><div class="section-heading compact"><p class="kicker">04 / Paired results</p><h2 id="results-heading">Measured gains,<br><em>separate protocols.</em></h2></div>
+        <div class="results-grid">
+          <article class="result-card"><p class="result-protocol">PanoPed-S TEST · MOTIP</p><h3>Native full-sphere tracking</h3><div class="result-track"><div><span>Geometric readout</span><strong>47.30</strong></div><div class="bar"><i style="width:84%"></i></div><div><span>MOTIP + Sextant · seed 42</span><strong>49.49</strong></div><div class="bar highlighted"><i style="width:89%"></i></div></div><p>HOTA ↑ · seed 43: 49.47</p></article>
+          <article class="result-card"><p class="result-protocol">PanoPed-R-Support-Auto · HAT · source-only</p><h3>Transfer without real-label fitting</h3><div class="result-track"><div><span>Geometric readout</span><strong>31.71</strong></div><div class="bar"><i style="width:72%"></i></div><div><span>HAT + Sextant · seed 42</span><strong>32.85</strong></div><div class="bar highlighted"><i style="width:76%"></i></div></div><p>HOTA ↑ · different tracker and evaluation target from S TEST</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenes" class="section scenes-section">
+      <div class="container">
+        <div class="scene-top"><div class="section-heading compact"><p class="kicker">05 / Scene library</p><h2>Step inside the scenes.</h2><p>Short excerpts from released RGB, encoded for this page. Synthetic labels come from release annotations; no generated or reconstructed people are added.</p></div><div class="filters" role="group" aria-label="Filter scene videos"><button class="active" type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="synthetic" aria-pressed="false">Synthetic</button><button type="button" data-filter="real" aria-pressed="false">Real</button></div></div>
+        <div class="scene-grid">
+          <article class="scene-card" data-kind="synthetic"><video controls playsinline preload="none" poster="assets/images/fixed-poster.webp"><source src="assets/video/fixed.mp4" type="video/mp4"></video><div><span>01 · PanoPed-S</span><h3>Fixed camera</h3><p>One full sphere, one stable viewpoint.</p></div></article>
+          <article class="scene-card" data-kind="synthetic"><video controls playsinline preload="none" poster="assets/images/quadruped-poster.webp"><source src="assets/video/quadruped.mp4" type="video/mp4"></video><div><span>02 · PanoPed-S</span><h3>Quadruped camera</h3><p>Street-level movement through a crowd.</p></div></article>
+          <article class="scene-card" data-kind="synthetic"><video controls playsinline preload="none" poster="assets/images/drone-poster.webp"><source src="assets/video/drone.mp4" type="video/mp4"></video><div><span>03 · PanoPed-S</span><h3>Drone camera</h3><p>Changing height and viewpoint.</p></div></article>
+          <article class="scene-card" data-kind="synthetic"><video controls playsinline preload="none" poster="assets/images/labels-poster.webp"><source src="assets/video/labels.mp4" type="video/mp4"></video><div><span>04 · PanoPed-S</span><h3>Released labels</h3><p>L1 spherical regions over RGB.</p></div></article>
+          <article class="scene-card" data-kind="real"><video controls playsinline preload="none" poster="assets/images/real-corridor-poster.webp"><source src="assets/video/real-corridor.mp4" type="video/mp4"></video><div><span>05 · PanoPed-R</span><h3>R-01 · Corridor</h3><p>Seam crossing and lower-polar targets.</p></div></article>
+          <article class="scene-card" data-kind="real"><video controls playsinline preload="none" poster="assets/images/real-plaza-poster.webp"><source src="assets/video/real-plaza.mp4" type="video/mp4"></video><div><span>06 · PanoPed-R</span><h3>R-02 · Open plaza</h3><p>Multiple levels, stairs and scale variation.</p></div></article>
+          <article class="scene-card" data-kind="real"><video controls playsinline preload="none" poster="assets/images/real-courtyard-poster.webp"><source src="assets/video/real-courtyard.mp4" type="video/mp4"></video><div><span>07 · PanoPed-R</span><h3>R-03 · Courtyard</h3><p>Occlusion across a broad open scene.</p></div></article>
+        </div>
+        <p class="scene-note">The release has two additional unlabeled real sequences, U01 and U02. Their website previews are pending access to the full release media; this page does not substitute another sequence for them.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a><p>Tracking people on the full sphere.</p></div><div class="footer-authors"><strong>Qinfeng Zhu · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</strong><p>Correspondence: <a href="mailto:lei.fan@xjtlu.edu.cn">lei.fan@xjtlu.edu.cn</a></p></div><div class="footer-links"><a href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing">Synthetic data ↗</a><a href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing">Real data ↗</a><span>Paper and code links open with the preprint.</span></div></div><div class="container footer-bottom"><span>© 2026 PanoPed authors</span><span>Unpublished preview · not indexed</span></div></footer>
+  <script src="./assets/main.js" defer></script>
+</body>
+</html>
