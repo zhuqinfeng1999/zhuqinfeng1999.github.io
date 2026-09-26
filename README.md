@@ -1,6 +1,6 @@
 # Qinfeng Zhu — Academic Portfolio
 
-Source code for [zhuqinfeng1999.github.io](https://zhuqinfeng1999.github.io/), an interactive academic portfolio focused on spatial intelligence, remote sensing, panoramic vision, multimodal learning and 3D scene understanding.
+Source code for [zhuqinfeng1999.github.io](https://zhuqinfeng1999.github.io/). My research trajectory connects computer vision with embodied intelligence: current agentic-robotics work at Duke (Kunshan) University with Prof. Kaizhu Huang, and future directions in world–action models, vision–language–action and dexterous manipulation. Published visual-perception research remains the foundation.
 
 ## Site map
 
@@ -8,7 +8,7 @@ Source code for [zhuqinfeng1999.github.io](https://zhuqinfeng1999.github.io/), a
 - `/research/` — interactive research atlas
 - `/publications/` — searchable publication library with BibTeX
 - `/projects/` — datasets, methods and research maps
-- `/explorer/` — interactive spatial-intelligence scenes
+- `/explorer/` — interactive embodied-intelligence studies
 - `/SemanticUrban/` and `/IndoorMS/` — dataset project pages
 
 ## Architecture
@@ -17,7 +17,7 @@ The site is dependency-free at build time and is served directly by GitHub Pages
 
 - semantic HTML pages
 - custom CSS in `assets/css/`
-- vanilla JavaScript, a shared WebGL sensing scene and Canvas 2D fallback in `assets/js/`
+- vanilla JavaScript, a locally vendored Three.js renderer and static fallback posters
 - structured research content in `assets/data/research.json`
 
 ## Local preview
@@ -32,17 +32,21 @@ Then open `http://127.0.0.1:4173/`.
 
 ## Content updates
 
-One synthetic urban district is generated locally in `assets/js/spatial-cloud.js`.
-The same GPU geometry supports point-cloud inspection, regional sampling,
-spherical gaze and road-constrained navigation, with smoothly connected cameras.
-Drag to orbit, or use the active mode's pointer/tap interaction. Optional semantic
-color, pause and reset controls are shared across the four views. Arrow keys
-interact with the active mode; Enter selects, holds or navigates; Space pauses;
-R resets. Reduced motion and offscreen suspension are supported.
-`assets/js/spatial-world.js` coordinates the interface and retains a Canvas 2D
-fallback when WebGL is unavailable. These are illustrative models, not captured
-measurements or inference results. The shared visual refinement layer is
-`assets/css/refinement.css`, loaded after the page's base styles.
+The current renderer is `assets/js/robot-stage.js`, with four distinct modes:
+reversible arm stacking, a dexterous hand, preset VLA-style rover navigation and
+idealized physical prediction. The latter two studies live in `assets/js/robot-studies.js`.
+Franka Panda and Shadow Hand geometry is locally stored under
+`assets/models/`; licensed asset provenance is recorded in
+[`assets/models/NOTICE.md`](assets/models/NOTICE.md). Studio lighting is CC0.
+These are illustrative kinematics and idealized dynamics, not live policies or experimental results.
+The opening grasp runs once; stacked objects retain their state and are returned top-first.
+The terminal uses fixed commands, and the dynamics illustration is not a learned WAM.
+
+Drag to inspect, choose a target or instruction, then execute an action.
+Arrow keys, Enter, Space and R provide keyboard alternatives. Reduced motion,
+pause/reset, offscreen suspension and static fallback posters are supported.
+`assets/css/embodied.css` is loaded after the existing refinement layer.
+Earlier sensing-scene code is retained, but is not loaded by the new homepage.
 
 Publication metadata, links, research directions and the timeline are maintained in [`assets/data/research.json`](assets/data/research.json). The homepage's editorially selected layouts remain in [`index.html`](index.html).
 

@@ -21,7 +21,7 @@
     const loaderCount = loader.querySelector('[data-loader-count]');
     const loaderProgress = loader.querySelector('[data-loader-progress]');
     const loaderWord = loader.querySelector('[data-loader-word]');
-    const words = ['Perceive', 'Represent', 'Understand'];
+    const words = document.querySelector('[data-embodied-world]') ? ['Perceive', 'Reason', 'Act'] : ['Perceive', 'Represent', 'Understand'];
     const duration = reducedMotion ? 120 : 1200;
     const startedAt = performance.now();
     let activeWord = 0;
@@ -205,7 +205,7 @@
       { title: 'Research Atlas', detail: 'Explore connections across sensing and scene understanding', href: '/research/', type: 'Page' },
       { title: 'Publications Library', detail: 'Search, filter and copy BibTeX', href: '/publications/', type: 'Page' },
       { title: 'Projects', detail: 'Datasets, methods and research maps', href: '/projects/', type: 'Page' },
-      { title: 'Spatial Intelligence Explorer', detail: 'Compare four sensing spaces in one interactive scene', href: '/explorer/', type: 'Explorer' },
+      { title: 'Embodied Intelligence Explorer', detail: 'Explore robotic arms, dexterous hands, VLA and world–action models', href: '/explorer/', type: 'Explorer' },
       { title: 'CV — August 2026', detail: 'Download PDF', href: '/assets/docs/Qinfeng_Zhu_CV.pdf', type: 'Document' }
     ];
     let visible = [];
