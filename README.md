@@ -1,6 +1,6 @@
 # Qinfeng Zhu — Academic Portfolio
 
-Source code for [zhuqinfeng1999.github.io](https://zhuqinfeng1999.github.io/). My research trajectory connects computer vision with embodied intelligence: current agentic-robotics work at Duke (Kunshan) University with Prof. Kaizhu Huang, and future directions in world–action models, vision–language–action and dexterous manipulation. Published visual-perception research remains the foundation.
+Source code for [zhuqinfeng1999.github.io](https://zhuqinfeng1999.github.io/). My research trajectory connects computer vision with embodied intelligence: current agentic-robotics work at [Duke University (based Kunshan)](https://www.dukekunshan.edu.cn/) with Prof. Kaizhu Huang, and future directions in world–action models, vision–language–action and dexterous manipulation. Published visual-perception research remains the foundation.
 
 ## Site map
 
