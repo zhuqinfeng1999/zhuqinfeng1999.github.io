@@ -774,6 +774,26 @@
   ],
   "projects": [
     {
+      "id": "panoped",
+      "title": "PanoPed",
+      "type": "Dataset",
+      "year": 2026,
+      "eyebrow": "Full-sphere pedestrian tracking",
+      "description": "Synthetic fixed and moving-camera panoramas, consented real scenes, and the Sextant query-conditioned localization readout.",
+      "image": "/PanoPed/assets/images/gallery-auto.webp",
+      "href": "/PanoPed/",
+      "tags": [
+        "Panoramic vision",
+        "Pedestrian tracking",
+        "Sim-to-real"
+      ],
+      "links": {
+        "Project page": "/PanoPed/",
+        "GitHub": "https://github.com/zhuqinfeng1999/PanoPed",
+        "Data access": "https://github.com/zhuqinfeng1999/PanoPed#download-datasets"
+      }
+    },
+    {
       "id": "semanticurban",
       "title": "SemanticUrban",
       "type": "Dataset",
@@ -854,6 +874,13 @@
     }
   ],
   "news": [
+    {
+      "date": "2026-10-06",
+      "label": "OCT 2026",
+      "title": "PanoPed project and code released.",
+      "text": "Explore the full-sphere tracking benchmarks, Sextant code, dataset formats and data-access links.",
+      "link": "/PanoPed/"
+    },
     {
       "date": "2026-09",
       "label": "SEP 2026",
