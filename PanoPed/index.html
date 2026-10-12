@@ -14,7 +14,19 @@
   <meta property="og:image" content="https://zhuqinfeng1999.github.io/PanoPed/assets/images/intro-cover.webp">
   <meta name="twitter:card" content="summary_large_image">
   <title>PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking</title>
-  <link rel="stylesheet" href="./assets/style.css">
+  <meta name="citation_title" content="PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking">
+  <meta name="citation_author" content="Qinfeng Zhu">
+  <meta name="citation_author" content="Weiguang Zhao">
+  <meta name="citation_author" content="Yunxi Jiang">
+  <meta name="citation_author" content="Anh Nguyen">
+  <meta name="citation_author" content="Lei Fan">
+  <meta name="citation_publication_date" content="2026/09/25">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.08826">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css?v=20261012">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -26,23 +38,31 @@
       <a href="#method">Sextant</a>
       <a href="#scenes">Scenes</a>
     </nav>
-    <span class="header-status"><span class="status-dot"></span> Official project</span>
+    <a class="header-status" href="https://arxiv.org/abs/2610.08826" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
   </header>
 
   <main id="main">
     <section id="top" class="hero" aria-labelledby="hero-title">
-      <div class="hero-image" role="img" aria-label="Unreal Engine panoramic street scene with drone-mounted camera annotations"></div>
+      <div class="hero-image" aria-hidden="true"></div>
       <div class="hero-shade"></div>
-      <div class="container hero-content">
+      <div class="container hero-layout"><div class="hero-content">
         <p class="eyebrow"><span class="eyebrow-line"></span> Full-sphere pedestrian tracking</p>
-        <h1 id="hero-title">PanoPed: Beyond Bounding Boxes<br><em>for Sim-to-Real Panoramic<br>Pedestrian Tracking</em></h1>
+        <h1 id="hero-title" aria-label="PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking">Pano<em>Ped</em><small>Beyond Bounding Boxes for<br>Sim-to-Real Panoramic Pedestrian Tracking</small></h1>
+        <p class="paper-authors"><a href="https://zhuqinfeng1999.github.io/">Qinfeng Zhu</a> · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</p>
         <p class="hero-description">PanoPed brings people tracking onto the full sphere, from stationary cameras to quadruped and drone viewpoints. Sextant reads visual evidence already inside a frozen tracker to place each person more precisely.</p>
         <div class="hero-actions">
-          <span class="button button-primary" aria-disabled="true" title="The paper link will be added when the arXiv preprint is online">Paper <span class="button-note">coming soon</span></span>
+          <a class="button button-primary" href="https://arxiv.org/abs/2610.08826" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
+          <a class="button button-outline" href="https://arxiv.org/pdf/2610.08826" target="_blank" rel="noopener noreferrer">PDF ↗</a>
           <a class="button button-outline" href="https://github.com/zhuqinfeng1999/PanoPed" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
           <a class="button button-text" href="#datasets">Explore the data <span aria-hidden="true">↗</span></a>
         </div>
       </div>
+      <div class="hero-panorama" aria-label="Three synthetic camera viewpoints">
+        <figure class="panorama-main"><img src="assets/images/hero-drone.webp" alt="Synthetic panoramic drone-camera view" fetchpriority="high"><figcaption><span>01 / Drone</span><span>Full-sphere perception</span></figcaption></figure>
+        <figure><img src="assets/images/fixed-poster.webp" alt="Synthetic fixed-camera panorama"><figcaption>02 / Fixed camera</figcaption></figure>
+        <figure><img src="assets/images/hero-quadruped.webp" alt="Synthetic quadruped-mounted panorama"><figcaption>03 / Quadruped</figcaption></figure>
+        <a class="panorama-caption" href="#overview"><span class="play-symbol" aria-hidden="true">▶</span> Watch the project film <span aria-hidden="true">↗</span></a>
+      </div></div>
       <div class="hero-bottom container" aria-label="Benchmark at a glance">
         <div><strong>60</strong><span>synthetic sequences</span></div>
         <div><strong>5</strong><span>real sequences</span></div>
@@ -115,11 +135,11 @@
       </div>
     </section>
 
-    <section class="section results-section" aria-labelledby="results-heading">
+    <section id="results" class="section results-section" aria-labelledby="results-heading">
       <div class="container"><div class="section-heading compact"><p class="kicker">04 / Paired results</p><h2 id="results-heading">Tracking gains under<br><em>defined protocols.</em></h2></div>
         <div class="results-grid">
-          <article class="result-card"><p class="result-protocol">PanoPed-S TEST · MOTIP</p><h3>Native full-sphere tracking</h3><div class="result-track"><div><span>Geometric readout</span><strong>47.30</strong></div><div class="bar"><i style="width:84%"></i></div><div><span>MOTIP + Sextant · seed 42</span><strong>49.49</strong></div><div class="bar highlighted"><i style="width:89%"></i></div></div><p>HOTA ↑ · seed 43: 49.47</p></article>
-          <article class="result-card"><p class="result-protocol">PanoPed-R-Support-Auto · HAT · source-only</p><h3>Transfer without real-label fitting</h3><div class="result-track"><div><span>Geometric readout</span><strong>31.71</strong></div><div class="bar"><i style="width:72%"></i></div><div><span>HAT + Sextant · seed 42</span><strong>32.85</strong></div><div class="bar highlighted"><i style="width:76%"></i></div></div><p>HOTA ↑ · different tracker and evaluation target from S TEST</p></article>
+          <article class="result-card"><p class="result-protocol">PanoPed-S TEST · MOTIP</p><h3>Native full-sphere tracking</h3><div class="result-track"><div><span>Geometric readout</span><strong>47.30</strong></div><div class="bar"><i style="width:47.30%"></i></div><div><span>MOTIP + Sextant · seed 42</span><strong>49.49</strong></div><div class="bar highlighted"><i style="width:49.49%"></i></div></div><p>HOTA ↑ · bars use a 0–100 scale · seed 43: 49.47</p></article>
+          <article class="result-card"><p class="result-protocol">PanoPed-R-Support-Auto · HAT · source-only</p><h3>Transfer without real-label fitting</h3><div class="result-track"><div><span>Geometric readout</span><strong>31.71</strong></div><div class="bar"><i style="width:31.71%"></i></div><div><span>HAT + Sextant · seed 42</span><strong>32.85</strong></div><div class="bar highlighted"><i style="width:32.85%"></i></div></div><p>HOTA ↑ · bars use a 0–100 scale · different tracker and evaluation target from S TEST</p></article>
         </div>
       </div>
     </section>
@@ -141,9 +161,25 @@
         <p class="scene-note">All five real sequences are shown. R-U01 and R-U02 are released without dense tracking annotations; only their RGB appears here.</p>
       </div>
     </section>
+    <section id="citation" class="section citation-section" aria-labelledby="citation-title">
+      <div class="container citation-layout">
+        <div><p class="kicker">06 / Read &amp; build</p><h2 id="citation-title">Take a closer look.<br><em>Build on PanoPed.</em></h2><p class="citation-description">Read the full paper for the benchmark design, spherical geometry and paired evaluation protocols. If you use this work, please cite the paper and identify the dataset release version.</p><div class="hero-actions"><a class="button button-primary" href="https://arxiv.org/abs/2610.08826">Read on arXiv ↗</a><a class="button button-outline" href="https://github.com/zhuqinfeng1999/PanoPed">Explore the code ↗</a></div></div>
+        <div class="citation-panel"><div class="citation-toolbar"><span>arXiv:2610.08826 · 2026</span><button type="button" data-copy-citation>Copy BibTeX</button></div><pre><code id="bibtex">@article{zhu2026panoped,
+  title={PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking},
+  author={Zhu, Qinfeng and Zhao, Weiguang and Jiang, Yunxi and Nguyen, Anh and Fan, Lei},
+  journal={arXiv preprint arXiv:2610.08826},
+  year={2026},
+  eprint={2610.08826},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  doi={10.48550/arXiv.2610.08826},
+  url={https://arxiv.org/abs/2610.08826}
+}</code></pre><div class="citation-bottom"><a href="assets/panoped.bib" download>Download .bib ↓</a><span data-copy-status role="status" aria-live="polite"></span></div></div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a><p>Tracking people on the full sphere.</p></div><div class="footer-authors"><strong>Qinfeng Zhu · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</strong><p>Correspondence: <a href="mailto:lei.fan@xjtlu.edu.cn">lei.fan@xjtlu.edu.cn</a></p></div><div class="footer-links"><a href="https://github.com/zhuqinfeng1999/PanoPed">Code and release guide ↗</a><a href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing">Synthetic data ↗</a><a href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing">Real data ↗</a><a href="https://github.com/zhuqinfeng1999/PanoPed#data-licenses">Release licenses ↗</a></div></div><div class="container footer-bottom"><span>© 2026 PanoPed authors</span><a href="https://zhuqinfeng1999.github.io/">Qinfeng Zhu · Homepage ↗</a></div></footer>
-  <script src="./assets/main.js" defer></script>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>Pano<span class="brand-emphasis">Ped</span></span></a><p>Tracking people on the full sphere.</p></div><div class="footer-authors"><strong>Qinfeng Zhu · Weiguang Zhao · Yunxi Jiang<br>Anh Nguyen · Lei Fan</strong><p>Correspondence: <a href="mailto:lei.fan@xjtlu.edu.cn">lei.fan@xjtlu.edu.cn</a></p></div><div class="footer-links"><a href="https://arxiv.org/abs/2610.08826">Read the paper ↗</a><a href="#citation">Citation &amp; BibTeX ↓</a><a href="https://github.com/zhuqinfeng1999/PanoPed">Code and release guide ↗</a><a href="https://drive.google.com/drive/folders/1PjL8_KBVAmPNd1Zony2MQ9ogg1B7d2CR?usp=sharing">Synthetic data ↗</a><a href="https://drive.google.com/drive/folders/1QYf_ocQALFYrwdfIa6g-bVwnnIQIXA9V?usp=sharing">Real data ↗</a><a href="https://github.com/zhuqinfeng1999/PanoPed#data-licenses">Release licenses ↗</a></div></div><div class="container footer-bottom"><span>© 2026 PanoPed authors</span><a href="https://github.com/zhuqinfeng1999/interactive-academic-portfolio">Portfolio design · Spatialfolio ↗</a><a href="https://zhuqinfeng1999.github.io/">Qinfeng Zhu · Homepage ↗</a></div></footer>
+  <script src="./assets/main.js?v=20261012" defer></script>
 </body>
 </html>

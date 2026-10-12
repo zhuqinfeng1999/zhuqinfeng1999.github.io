@@ -107,6 +107,7 @@
         "y": 10
       },
       "publicationIds": [
+        "panoped",
         "panoramic-survey",
         "so3uformer"
       ],
@@ -190,6 +191,50 @@
   ],
   "publications": [
     {
+      "id": "panoped",
+      "year": 2026,
+      "venue": "arXiv",
+      "venueShort": "arXiv",
+      "type": "Preprint",
+      "title": "PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking",
+      "authors": [
+        {
+          "name": "Qinfeng Zhu",
+          "self": true
+        },
+        {
+          "name": "Weiguang Zhao"
+        },
+        {
+          "name": "Yunxi Jiang"
+        },
+        {
+          "name": "Anh Nguyen"
+        },
+        {
+          "name": "Lei Fan"
+        }
+      ],
+      "featuredRank": 1,
+      "image": "/PanoPed/assets/images/gallery-auto.webp",
+      "imageAlt": "Synthetic and real PanoPed panoramas; real visible-support overlays are automatic predictions",
+      "summary": "A full-sphere sim-to-real pedestrian tracking benchmark spanning fixed, quadruped and drone viewpoints, with Sextant for query-conditioned angular localization.",
+      "keywords": [
+        "Panoramic vision",
+        "Pedestrian tracking",
+        "Sim-to-real",
+        "Dataset",
+        "Sextant"
+      ],
+      "links": {
+        "arXiv": "https://arxiv.org/abs/2610.08826",
+        "PDF": "https://arxiv.org/pdf/2610.08826",
+        "Project": "/PanoPed/",
+        "GitHub": "https://github.com/zhuqinfeng1999/PanoPed"
+      },
+      "bibtex": "@article{zhu2026panoped,\n  title={PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking},\n  author={Zhu, Qinfeng and Zhao, Weiguang and Jiang, Yunxi and Nguyen, Anh and Fan, Lei},\n  journal={arXiv preprint arXiv:2610.08826},\n  year={2026},\n  eprint={2610.08826},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  doi={10.48550/arXiv.2610.08826},\n  url={https://arxiv.org/abs/2610.08826}\n}"
+    },
+    {
       "id": "semanticurban",
       "year": 2026,
       "venue": "Expert Systems with Applications",
@@ -214,7 +259,7 @@
         }
       ],
       "note": "Co-first author",
-      "featuredRank": 1,
+      "featuredRank": 2,
       "image": "/static/images/SemanticUrban1.jpg",
       "imageAlt": "SemanticUrban point-cloud intensity, RGB and semantic labels",
       "summary": "A large-scale, high-resolution terrestrial laser-scanning benchmark for fine-grained semantic understanding of complex urban scenes.",
@@ -249,7 +294,7 @@
           "name": "Lei Fan"
         }
       ],
-      "featuredRank": 2,
+      "featuredRank": 3,
       "image": "/assets/images/publications/panoramic-survey.webp",
       "imageAlt": "Taxonomy of panoramic scene-understanding methods",
       "summary": "A structured review of panoramic scene understanding, tracing the field from distortion-aware engineering to representations native to spherical geometry.",
@@ -285,7 +330,7 @@
           "name": "Lei Fan"
         }
       ],
-      "featuredRank": 3,
+      "featuredRank": 4,
       "image": "/assets/images/publications/so3uformer.webp",
       "imageAlt": "SO3UFormer sphere-native architecture",
       "summary": "A sphere-native architecture for learning intrinsic spherical features and improving rotation robustness in panoramic dense prediction.",
@@ -321,7 +366,7 @@
           "name": "Ningxin Weng"
         }
       ],
-      "featuredRank": 4,
+      "featuredRank": 5,
       "image": "/assets/images/publications/point-cloud-augmentation.webp",
       "imageAlt": "Examples of point-cloud data-augmentation strategies",
       "summary": "A systematic account of point-cloud augmentation strategies, their design choices and their role in robust 3D deep learning.",
@@ -357,7 +402,7 @@
           "name": "Lei Fan"
         }
       ],
-      "featuredRank": 5,
+      "featuredRank": 6,
       "image": "/assets/images/publications/classwise-crf.webp",
       "imageAlt": "ClassWise-CRF expert-network fusion concept",
       "summary": "A category-specific fusion approach designed to improve semantic segmentation of remotely sensed imagery.",
@@ -398,7 +443,7 @@
           "name": "Lei Fan"
         }
       ],
-      "featuredRank": 6,
+      "featuredRank": 7,
       "image": "/assets/images/publications/mamba-scanning.webp",
       "imageAlt": "Directional scanning strategies for remote-sensing imagery",
       "summary": "An investigation of how scanning order shapes Vision Mamba performance for semantic segmentation of remote-sensing imagery.",
@@ -433,7 +478,7 @@
           "name": "Lei Fan"
         }
       ],
-      "featuredRank": 7,
+      "featuredRank": 8,
       "image": "/assets/images/publications/indoorms.webp",
       "imageAlt": "IndoorMS multispectral dataset collection and training workflow",
       "summary": "A multispectral benchmark for semantic segmentation across diverse indoor scenes.",
@@ -789,6 +834,8 @@
       ],
       "links": {
         "Project page": "/PanoPed/",
+        "arXiv": "https://arxiv.org/abs/2610.08826",
+        "PDF": "https://arxiv.org/pdf/2610.08826",
         "GitHub": "https://github.com/zhuqinfeng1999/PanoPed",
         "Data access": "https://github.com/zhuqinfeng1999/PanoPed#download-datasets"
       }

@@ -25,3 +25,20 @@ for (const video of document.querySelectorAll('video')) {
     }
   });
 }
+
+const copyButton = document.querySelector('[data-copy-citation]');
+copyButton?.addEventListener('click', async () => {
+  const code = document.querySelector('#bibtex');
+  const status = document.querySelector('[data-copy-status]');
+  try {
+    await navigator.clipboard.writeText(code.textContent.trim());
+    status.textContent = 'Citation copied.';
+  } catch {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(code);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    status.textContent = 'Select and copy the citation, or download the .bib file.';
+  }
+});
