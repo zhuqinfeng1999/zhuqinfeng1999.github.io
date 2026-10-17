@@ -29,6 +29,17 @@
   transition:color .2s,border-color .2s;
 }
 .embodied-hero .hero-intro a:hover { color:#e0f5f6; border-bottom-color:#b8dbe3; }
+/* Visible contact details, integrated into the introduction rather than a card. */
+.hero-email { margin-top:18px; color:#afc1ca; font-size:12px; line-height:1.7; }
+.hero-email > p { margin:0 0 3px; }
+.hero-email a { text-decoration:underline; text-decoration-color:#b8d8df50; text-underline-offset:4px; overflow-wrap:anywhere; }
+.hero-email a:hover { color:#e0f5f6; text-decoration-color:currentColor; }
+.hero-email-primary { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; }
+.hero-email-primary a { color:#d5eef0; font-size:14px; font-weight:600; }
+.hero-email-primary > span { color:#a4d5d9; font:10px var(--mono); }
+.hero-email-academic { display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 14px; margin-top:6px; }
+.hero-email-academic > span { color:#96acb7; }
+.hero-email-academic a { color:#afc1ca; }
 .embodied-hero .availability { border-top-color:#bbdce133; }
 .embodied-hero .opportunity + .opportunity {
   padding-left:22px;
@@ -156,6 +167,11 @@
 .contact-inner > p:not(.eyebrow) { color:#aebfc8; }
 .contact-inner .email-link { font-size:16px; padding-bottom:12px; border-bottom-color:#b8d8df50; }
 .institutional-email { font-size:10px; }
+.email-preference { display:block; margin-bottom:12px; color:#a4d5d9; font:10px var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+.academic-contacts { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 22px; margin-top:22px; color:#afc1ca; font-size:12px; line-height:1.8; }
+.academic-contacts p { flex-basis:100%; margin:0; }
+.academic-contacts a { text-decoration:underline; text-decoration-color:#b8d8df50; text-underline-offset:4px; overflow-wrap:anywhere; }
+.academic-contacts a:hover { color:#e0f5f6; text-decoration-color:currentColor; }
 .footer-links { gap:20px; }
 .footer-links a { font-size:11px; }
 a:focus-visible,button:focus-visible { outline:2px solid #a9ddea; outline-offset:5px; }
