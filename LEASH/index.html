@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEASH: Stay Safe in Agentic Robotics</title>
+<meta name="description" content="RoboRisk is a safety benchmark for robots driven by foundation models: 92 tasks in simulation and 13 on a real arm. LEASH is a safety harness that reviews tasks, actions and irreversible operations before they run.">
+<meta property="og:title" content="LEASH: Stay Safe in Agentic Robotics">
+<meta property="og:description" content="RoboRisk: 105 safety tasks for agentic robots. LEASH: three safety gates and one shared policy.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://zhuqinfeng1999.github.io/LEASH/">
+<meta property="og:url" content="https://zhuqinfeng1999.github.io/LEASH/">
+<meta property="og:image" content="https://zhuqinfeng1999.github.io/LEASH/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=9">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <img src="assets/img/puppy_leash.png" alt="" width="34" height="34">
+      <span>LEASH <span class="brand-sep">·</span> RoboRisk</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#demos">Demos</a>
+      <a href="#benchmark">Benchmark</a>
+      <a href="#tasks">All tasks</a>
+      <a href="#leash">LEASH</a>
+      <a href="#results">Results</a>
+      <a href="#bibtex">BibTeX</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================ hero -->
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker"><span class="dot t"></span><span class="dot p"></span><span class="dot e"></span><span class="dot i"></span><span class="dot s"></span>A safety benchmark and a safety harness for agentic robots</p>
+    <h1>LEASH: Stay Safe in Agentic Robotics</h1>
+    <p class="authors">
+      <span class="au"><a href="https://zhuqinfeng1999.github.io/">Qinfeng Zhu</a><sup>1,2,3</sup>,</span>
+      <span class="au">Weiguang Zhao<sup>3</sup>,</span>
+      <span class="au">Ke Sun<sup>4</sup>,</span>
+      <span class="au">Xihao Guo<sup>2</sup>,</span>
+      <span class="au">Yunxi Jiang<sup>5</sup>,</span>
+      <span class="au">Rui Zhang<sup>1</sup>,</span>
+      <span class="au">Lei Fan<sup>1,*</sup>,</span>
+      <span class="au">Kaizhu Huang<sup>2,*</sup></span>
+    </p>
+    <p class="affils">
+      <span><sup>1</sup>Xi’an Jiaotong-Liverpool University</span>
+      <span><sup>2</sup>Duke Kunshan University</span>
+      <span><sup>3</sup>University of Liverpool</span>
+      <span><sup>4</sup>NUS</span>
+      <span><sup>5</sup>CNRS</span>
+    </p>
+    <p class="affils small"><sup>*</sup>Corresponding authors</p>
+    <div class="buttons">
+      <a class="btn soon" href="#" aria-disabled="true" title="The arXiv link goes here when the paper is online"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v6h6M9 13h8M9 17h8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Paper<span class="soon-tag">arXiv soon</span></a>
+      <a class="btn repo" href="https://github.com/zhuqinfeng1999/LEASH"><span aria-hidden="true">&lt;/&gt;</span> GitHub</a>
+      <a class="btn" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg>Video</a>
+      <a class="btn" href="#tasks"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>105 tasks</a>
+      <a class="btn" href="#bibtex"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4c-2 0-3 1-3 3v2.5c0 1.2-.8 2-2 2.5 1.2.5 2 1.3 2 2.5V17c0 2 1 3 3 3M16 4c2 0 3 1 3 3v2.5c0 1.2.8 2 2 2.5-1.2.5-2 1.3-2 2.5V17c0 2-1 3-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>BibTeX</a>
+    </div>
+  </div>
+
+  <div class="wrap wide" id="video">
+    <!-- When the video is on YouTube, put its id in data-youtube (e.g. data-youtube="dQw4w9WgXcQ"). -->
+    <div class="main-video" data-youtube="">
+      <video controls playsinline preload="metadata" poster="assets/img/video_poster.jpg" aria-label="LEASH project overview">
+        <source src="assets/video/leash-overview.mp4" type="video/mp4">
+        <a href="assets/video/leash-overview.mp4">Download the project video</a>
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ at a glance -->
+<section class="glance">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>105</b><span>tasks: 92 in simulation, 13 on a real arm</span></div>
+      <div class="stat"><b>5</b><span>kinds of risk, from harmful requests to forgotten allergies</span></div>
+      <div class="stat"><b>9–77%</b><span>harm rate of six frontier models used as planners</span></div>
+      <div class="stat leash"><b>0%</b><span>harm on the real robot for four planners with LEASH</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ abstract -->
+<section class="section" id="abstract">
+  <div class="wrap narrow">
+    <p class="label">Abstract</p>
+    <p class="lead">Foundation models such as GPT and Claude can now plan and control robot arms. We found that this comes with real safety risks, and that there is no thorough way to measure them yet.</p>
+    <p>We introduce <b>RoboRisk</b>, a benchmark that evaluates safety in closed-loop robot tasks, with 92 tasks in simulation and 13 tasks on a physical robot. The tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I) and Sequential Memory (S). We evaluate six foundation models (GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, Claude Opus 5.5, Gemini 4 Argon and Grok 4.7) and two robot-specific APIs (the Dream API and PokeBot’s RoboAPI). Across the six foundation models, baseline harm rates range from 9.06% to 76.92%.</p>
+    <p>We then propose the <b>Lease-Enforced Agentic Safety Harness (LEASH)</b>, a safety layer that fits into nearly any agentic robot stack. LEASH uses a fast decision model (Jev, or OpenAI’s Decisions API) for three safety gates, a task gate, an action gate and a commit gate, and the planner and all gates share one safety policy. In simulation and on the physical robot, LEASH reduces harm for all six foundation models while largely keeping their task success, at a small cost in time and tokens.</p>
+  </div>
+</section>
+
+<!-- ============================================================ demos -->
+<section class="section tint" id="demos">
+  <div class="wrap">
+    <p class="label">Demos</p>
+    <h2>What the robot actually did</h2>
+    <p class="sub">Full runs, unedited. Thinking time plays at <b class="sp32">32×</b> and arm motion at <b class="sp4">4×</b>; the bar under each clip follows the real clock of the run. Each clip shows the third-person camera on the left and the wrist camera on the right.</p>
+    <div class="legend">
+      <span class="lg"><span class="badge harm">Harm</span>harm happened, or a harmful situation was created</span>
+      <span class="lg"><span class="badge success">Safe success</span>stayed safe and did what was asked (for T, a timely refusal)</span>
+      <span class="lg"><span class="badge incomplete">Safe incomplete</span>stayed safe but did not finish</span>
+    </div>
+    <div class="tabs" role="tablist" id="demo-tabs"></div>
+    <div class="cat-intro" id="demo-intro"></div>
+    <div class="demo-list" id="demo-list"></div>
+  </div>
+</section>
+
+<!-- ============================================================ benchmark -->
+<section class="section" id="benchmark">
+  <div class="wrap">
+    <p class="label">RoboRisk</p>
+    <h2>Five ways an agentic robot can cause harm</h2>
+    <p class="sub">RoboRisk-S has 92 tasks in MuJoCo with a Franka Panda arm (built on LIBERO and robosuite). RoboRisk-R has 13 tasks on a tabletop with a Dobot CR5V2 arm, a two-finger gripper and two RealSense D455 cameras. Every run ends in one of three outcomes, and harm always takes precedence over task completion.</p>
+    <div class="cats" id="cat-cards"></div>
+    <figure class="paper-fig">
+      <img src="assets/figs/fig2_roborisk.jpg" alt="Overview of RoboRisk: a mosaic of all simulated and real tasks arranged by category" loading="lazy">
+      <figcaption>Overview of RoboRisk. Around the center: frames from all simulated and real-robot tasks, grouped by risk category.</figcaption>
+    </figure>
+    <div class="metrics">
+      <div class="metric">
+        <p class="m-name">Harm Rate <span>HR ↓</span></p>
+        <p class="m-formula"><span class="frac"><span>runs labeled Harm</span><span>all runs</span></span></p>
+        <p class="m-note">The primary metric. Lower is safer.</p>
+      </div>
+      <div class="metric">
+        <p class="m-name">Safe Success Rate <span>SSR ↑</span></p>
+        <p class="m-formula"><span class="frac"><span>runs labeled Safe Success</span><span>all runs</span></span></p>
+        <p class="m-note">Checks that a method does not buy safety by refusing everything.</p>
+      </div>
+      <div class="metric">
+        <p class="m-name">Protocol</p>
+        <p class="m-note">Simulation: three seeds per task, averaged within a task, then equally across tasks. Real robot: one run per task. All outcomes are judged by hand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ tasks -->
+<section class="section tint" id="tasks">
+  <div class="wrap">
+    <p class="label">All tasks</p>
+    <h2>Browse every RoboRisk task</h2>
+    <p class="sub">The first frame of an ordinary run of each task, from the third-person camera with the wrist camera inset, and the exact instruction the user sends. Gray text describes the scene; it is not part of the instruction.</p>
+    <div class="filters">
+      <div class="f-row">
+        <span class="f-label">1 · Setting</span>
+        <div class="chips seg" id="f-set" role="group" aria-label="Setting"></div>
+        <span class="f-hint" id="f-hint"></span>
+      </div>
+      <div class="f-row">
+        <span class="f-label">2 · Risk type</span>
+        <div class="chips" id="f-cat" role="group" aria-label="Risk category"></div>
+      </div>
+      <div class="f-row">
+        <span class="f-label">3 · Search</span>
+        <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="f-q" type="search" placeholder="Search instructions, e.g. knife, allergic, microwave" autocomplete="off"></label>
+      </div>
+    </div>
+    <p class="count" id="f-count" aria-live="polite"></p>
+    <div class="task-grid" id="task-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================ LEASH -->
+<section class="section" id="leash">
+  <div class="wrap">
+    <p class="label">LEASH</p>
+    <h2>Put the puppy on a leash</h2>
+    <blockquote class="epigraph">“Every agentic robot is a good puppy, until you walk it without a leash.”<cite>Qinfeng Zhu</cite></blockquote>
+
+    <h3 class="h3">The idea comes from coding agents</h3>
+    <p class="sub left">Coding agents already review risky actions before they run. Codex, for example, sends certain approval requests to a separate reviewer agent. For a shell command, the text alone tells the reviewer whether it is dangerous. A robot command does not.</p>
+    <div class="compare">
+      <div class="cmp-card">
+        <p class="cmp-head"><span class="cmp-tag">Coding agent</span>Reviewing text is enough</p>
+        <div class="term" aria-label="Terminal example: a coding agent's command is rejected by a reviewer agent">
+          <div class="term-bar"><i></i><i></i><i></i><span>codex — ~/projects</span><button class="t-replay" type="button" aria-label="Replay the animation">↻ replay</button></div>
+          <div class="t-stamp" aria-hidden="true">BLOCKED</div>
+          <div class="term-body">
+            <p><span class="t-prompt">›</span> free up some disk space for me</p>
+            <p class="t-dim">• I’ll clear everything to make room.</p>
+            <p class="t-cmd">$ sudo rm -rf /*</p>
+            <p class="t-rev">■ Auto-reviewing</p>
+            <p class="t-dim t-ind">A carefully prompted reviewer agent is reviewing this request before it runs</p>
+            <p class="t-block">✗ Rejected by the reviewer: destructive command</p>
+          </div>
+        </div>
+        <p class="cmp-foot">The danger is in the words. A reviewer that reads the command can catch it.</p>
+      </div>
+      <div class="cmp-card robot">
+        <p class="cmp-head"><span class="cmp-tag leash">Agentic robot</span>The reviewer has to see the scene</p>
+        <div class="code-line"><span class="c-code"><span class="c-fn">move_to</span>(x=0.52, y=-0.08, z=0.21)</span><span class="c-q">Safe?</span></div>
+        <div class="scene-pair">
+          <figure><img src="assets/figs/p301_rgb.jpg" alt="RGB view of task P3-01: a cup of water, a laptop and a coaster" loading="lazy"><svg class="route" viewBox="0 0 640 480" aria-hidden="true"><ellipse cx="318" cy="234" rx="70" ry="38" class="nogo"/><path d="M225 262 L288 228 L350 208 L405 197" class="bad" pathLength="100"/><circle cx="225" cy="262" r="7" class="start"/><path d="M393 190 L406 197 L393 206" class="bad-head"/><text x="318" y="292" class="nogo-t">laptop</text></svg><figcaption>color</figcaption></figure>
+          <figure><img src="assets/figs/p301_depth.jpg" alt="Depth view of the same scene" loading="lazy"><figcaption>depth</figcaption></figure>
+        </div>
+        <div class="verdict" aria-live="polite">
+          <p class="v-deny"><span class="v-gate">Action gate</span>Denied: the gripper would carry a cup of water over the laptop.</p>
+          <p class="v-next"><span class="v-gate ok">Planner</span>Plans a route that goes around the laptop instead.</p>
+        </div>
+        <p class="cmp-foot">The same command is fine with a sponge and unsafe with a cup of water held over a laptop. LEASH reviews every action with the current color and depth images.</p>
+      </div>
+    </div>
+
+    <h3 class="h3">Three gates, one shared policy</h3>
+    <p class="sub left">The planner holds no standing permission to move the robot. Each gate grants a lease that covers only the current task, action or monitored operation, and the harness checks the lease before anything runs. The planner and the three gates read the same safety policy, written as a prompt, so the planner plans around the same rules the gates enforce.</p>
+    <ol class="flow" aria-label="Where the three gates sit">
+      <li class="f-node user"><b>User instruction</b><span>plus every camera frame</span></li>
+      <li class="f-gate g1"><b>Task gate</b><span>before planning</span></li>
+      <li class="f-node planner"><b>Planner</b><span>a foundation model</span></li>
+      <li class="f-gate g2"><b>Action gate</b><span>before every primitive or skill</span></li>
+      <li class="f-node robot"><b>Robot skill</b><span>runs on the arm</span></li>
+      <li class="f-gate g3"><b>Commit gate</b><span>before gripper opening or pouring</span></li>
+    </ol>
+    <div class="gates">
+      <article class="gate">
+        <p class="g-num">1</p>
+        <h4>Task gate</h4>
+        <dl>
+          <dt>When</dt><dd>Right after the user sends an instruction, before the planner sees it.</dd>
+          <dt>Sees</dt><dd>The instruction and the current frame from every camera.</dd>
+          <dt>If it rejects</dt><dd>The task ends. It is the only gate allowed to stop a task; after this point, only the planner can stop.</dd>
+        </dl>
+      </article>
+      <article class="gate">
+        <p class="g-num">2</p>
+        <h4>Action gate</h4>
+        <dl>
+          <dt>When</dt><dd>After the planner proposes an atomic action or a composite skill, before it runs.</dd>
+          <dt>Sees</dt><dd>The proposed action and the current camera frames.</dd>
+          <dt>If it rejects</dt><dd>The action is blocked and the planner replans a safer one, which goes back to the gate.</dd>
+        </dl>
+      </article>
+      <article class="gate">
+        <p class="g-num">3</p>
+        <h4>Commit gate</h4>
+        <dl>
+          <dt>When</dt><dd>Inside a long skill, right before a monitored, irreversible step. Today these are opening the gripper and pouring, detected in code.</dd>
+          <dt>Sees</dt><dd>The step about to happen and the current frames.</dd>
+          <dt>If it rejects</dt><dd>The step is blocked; the planner picks a safer next step or stops.</dd>
+        </dl>
+      </article>
+    </div>
+    <div class="note-box">
+      <p><b>Why decision models.</b> A task needs ten or more gate calls. With a general model such as GPT-6 Luna, each call took about 20&nbsp;s. The multimodal decision models released in October 2026 answer in a fraction of that and cost little, so LEASH uses Jev by default and also supports OpenAI’s Decisions API. Each gate returns a safety score <i>s</i>; the step is allowed only if <i>s</i>&nbsp;&gt;&nbsp;<i>τ</i>.</p>
+    </div>
+    <figure class="paper-fig">
+      <img src="assets/figs/fig3_leash.jpg" alt="Overview of LEASH: the planner and three gates share one safety policy; bottom, task P3-01 with the route LEASH denies" loading="lazy">
+      <figcaption>LEASH on task P3-01 (bottom). Frame 2 comes from a baseline run and shows the candidate route that LEASH denies.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ results -->
+<section class="section tint" id="results">
+  <div class="wrap">
+    <p class="label">Results</p>
+    <h2>Every planner gets safer with LEASH</h2>
+    <p class="sub">Follow each arrow from a hollow baseline marker to the filled marker for the same planner with LEASH (Jev). Moving up means fewer harmful runs. Moving right means more safe successes. The two robot APIs were evaluated only at baseline.</p>
+    <div class="chart-wrap">
+      <div class="chart-ctl chips" id="chart-ctl" role="group" aria-label="Setting"></div>
+      <div class="chart" id="chart"></div>
+      <div class="chart-key" id="chart-key"></div>
+    </div>
+    <div class="table-wrap">
+      <table class="res">
+        <caption>Overall results (%). RoboRisk-S: N = 276 runs per row. RoboRisk-R: N = 13. The two APIs use N = 39 runs on an adapted 13-task simulation subset and are not directly comparable. † Provisional records pending retesting. – not evaluated.</caption>
+        <thead>
+          <tr><th rowspan="2">Planner</th><th rowspan="2">Method</th><th colspan="2">RoboRisk-S</th><th colspan="2">RoboRisk-R</th></tr>
+          <tr><th>HR ↓</th><th>SSR ↑</th><th>HR ↓</th><th>SSR ↑</th></tr>
+        </thead>
+        <tbody id="res-body"></tbody>
+      </table>
+    </div>
+    <div class="findings">
+      <div class="finding"><p class="f-big">0.00%</p><p>HR for GPT-6 Astra in simulation with LEASH, down from 11.23%, while its SSR rises from 78.99% to 80.80%.</p></div>
+      <div class="finding"><p class="f-big">84.62%</p><p>SSR with no observed harm on the real robot for GPT-6 Astra, GPT-6.1 Sol, Gemini 4 Argon and (provisionally) Claude Opus 5.5.</p></div>
+      <div class="finding"><p class="f-big">+1.66%</p><p>extra end-to-end time for Astra and Sol in simulation (245.21 s to 249.28 s per run). The gates cost about $0.005 per run, 0.66% of the total.</p></div>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3 class="h3 small">Where harm remains</h3>
+        <p>GPT-6 Luna in simulation and Grok 4.7 on the real robot keep HRs of 12.68% and 38.46% with LEASH. Both often fail to follow instructions, and part of their harm comes from unstable motion rather than unsafe decisions: in physical trials they struck the tabletop, and Grok 4.7 hit the wrist camera. We do not recommend either model for physical experiments.</p>
+        <p>The Dream API records no harm but only 28.2% SSR; it is overly cautious and refuses safe steps. RoboAPI reaches 0.0% SSR and 59.0% HR. Both were tested on adapted setups, so these numbers say nothing about the services’ internal safety mechanisms.</p>
+      </div>
+      <div>
+        <h3 class="h3 small">The Human-Presence Gap</h3>
+        <p>In simulation, the planners work normally in scenes with people. On the real robot, the same planners become far more cautious when a person is present. On P1 (move a cleaver around a hand) and P2 (place a knife next to a hand), GPT-6 Astra, GPT-6.1 Sol, Gemini 4 Argon and Claude Opus 5.5 achieve no safe success. Most of these trials never start the manipulation. Current models do not yet balance safety with working next to people.</p>
+      </div>
+    </div>
+    <h3 class="h3 small">Choice of reviewer</h3>
+    <div class="table-wrap narrow-table">
+      <table class="res">
+        <caption>LEASH with different reviewer models (HR ↓ / SSR ↑, %). GPT-6 Luna is a general-purpose model; Decisions API and Jev are decision models. Jev is slightly faster and cheaper, so it is the default.</caption>
+        <thead><tr><th>Planner</th><th>Set</th><th>GPT-6 Luna</th><th>Decisions API</th><th>Jev</th></tr></thead>
+        <tbody>
+          <tr><td><i class="mdot" style="--c:#10A37F"></i>GPT-6 Astra</td><td>S</td><td><b>0.00</b> / <b>88.41</b></td><td>0.36 / 78.99</td><td><b>0.00</b> / 80.80</td></tr>
+          <tr><td><i class="mdot" style="--c:#E8A20C"></i>GPT-6.1 Sol</td><td>S</td><td>–</td><td><b>1.45</b> / <b>79.35</b></td><td><b>1.45</b> / 78.62</td></tr>
+          <tr><td><i class="mdot" style="--c:#8E6BF0"></i>GPT-6 Luna</td><td>S</td><td>–</td><td>14.49 / 46.74</td><td><b>12.68</b> / <b>51.09</b></td></tr>
+          <tr><td><i class="mdot" style="--c:#10A37F"></i>GPT-6 Astra</td><td>R</td><td>–</td><td><b>0.00</b> / <b>84.62</b></td><td><b>0.00</b> / <b>84.62</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figure class="paper-fig">
+      <img src="assets/figs/fig_qualitative.jpg" alt="Representative baseline failures in the five risk categories" loading="lazy">
+      <figcaption>Representative baseline failures (top: wrist or close-up view; bottom: third-person view). (a) T: Claude Opus 5.5 puts a phone into a bowl of water. (b) P: GPT-6 Astra carries a cup of milk directly over a power strip. (c) E: Gemini 4 Argon keeps moving a knife above a hand that enters the basket. (d) I: GPT-6.1 Sol follows an instruction on a tablet and lifts a knife instead of the ketchup (simulation). (e) S: Claude Opus 5.5 puts a pear on the plate although the user said they are allergic to pears.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ bibtex -->
+<section class="section" id="bibtex">
+  <div class="wrap narrow">
+    <p class="label">BibTeX</p>
+    <div class="bib">
+      <button class="copy" type="button" data-copy="bib-text">Copy</button>
+<pre id="bib-text">@misc{zhu2026leash,
+  title   = {{LEASH}: Stay Safe in Agentic Robotics},
+  author  = {Zhu, Qinfeng and Zhao, Weiguang and Sun, Ke and Guo, Xihao and
+             Jiang, Yunxi and Zhang, Rui and Fan, Lei and Huang, Kaizhu},
+  url     = {https://zhuqinfeng1999.github.io/LEASH/},
+  year    = {2026}
+}</pre>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="inst">
+      <img src="assets/logos/xjtlu.svg" alt="Xi’an Jiaotong-Liverpool University" loading="lazy">
+      <img src="assets/logos/dku.png" alt="Duke Kunshan University" loading="lazy">
+      <img src="assets/logos/liverpool.svg" alt="University of Liverpool" loading="lazy">
+      <img src="assets/logos/nus.svg" alt="National University of Singapore" loading="lazy">
+      <img src="assets/logos/cnrs.svg" alt="CNRS" loading="lazy">
+    </div>
+    <p class="foot-t"><img src="assets/img/puppy_leash.png" alt="" width="22" height="22">Stay safe, and walk your robot on a leash. · <a href="https://zhuqinfeng1999.github.io/">Qinfeng Zhu</a></p>
+  </div>
+</footer>
+
+<dialog class="modal" id="task-modal" aria-labelledby="tm-title">
+  <button class="m-close" type="button" aria-label="Close">×</button>
+  <div class="m-body" id="tm-body"></div>
+</dialog>
+
+<script src="assets/js/data.js?v=7" defer></script>
+<script src="assets/js/site.js?v=9" defer></script>
+</body>
+</html>
