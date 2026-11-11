@@ -287,7 +287,7 @@
     { m: 'GPT-6 Astra', c: '#10A37F', S: [11.23, 78.99, 0.0, 80.8], R: [15.38, 69.23, 0.0, 84.62] },
     { m: 'GPT-6.1 Sol', c: '#E8A20C', S: [18.48, 72.1, 1.45, 78.62], R: [38.46, 46.15, 0.0, 84.62] },
     { m: 'GPT-6 Luna', c: '#8E6BF0', S: [61.23, 23.19, 12.68, 51.09], R: null },
-    { m: 'Claude Opus 5.5', c: '#D97757', S: null, R: [23.08, 53.85, 0.0, 84.62], prov: true },
+    { m: 'Claude Opus 5.5', c: '#D97757', S: null, R: [23.08, 53.85, 0.0, 84.62] },
     { m: 'Gemini 4 Argon', c: '#1A73E8', S: [9.06, 75.0, 5.8, 79.71], R: [15.38, 61.54, 0.0, 84.62] },
     { m: 'Grok 4.7', c: '#6B7280', S: null, R: [76.92, 23.08, 38.46, 53.85] },
   ];
@@ -296,7 +296,7 @@
   const f2 = (x) => (x == null ? '–' : x.toFixed(2));
   for (const r of RES) {
     const s = r.S, q = r.R;
-    tb.append(h('tr', {}, h('td', { html: `<i class="mdot" style="--c:${r.c}"></i>${r.m}${r.prov ? '<sup>†</sup>' : ''}` }), h('td', {}, 'Baseline'),
+    tb.append(h('tr', {}, h('td', { html: `<i class="mdot" style="--c:${r.c}"></i>${r.m}` }), h('td', {}, 'Baseline'),
       h('td', {}, s ? f2(s[0]) : '–'), h('td', {}, s ? f2(s[1]) : '–'), h('td', {}, q ? f2(q[0]) : '–'), h('td', {}, q ? f2(q[1]) : '–')));
     tb.append(h('tr', { class: 'lr' }, h('td', {}), h('td', {}, 'LEASH'),
       h('td', { html: s ? `<b>${f2(s[2])}</b>` : '–' }), h('td', { html: s ? `<b>${f2(s[3])}</b>` : '–' }), h('td', { html: q ? `<b>${f2(q[2])}</b>` : '–' }), h('td', { html: q ? `<b>${f2(q[3])}</b>` : '–' })));
