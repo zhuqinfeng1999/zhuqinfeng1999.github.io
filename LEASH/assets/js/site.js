@@ -303,6 +303,11 @@
   }
   for (const a of API) tb.append(h('tr', { class: 'api' }, h('td', { html: `<i class="mdot" style="--c:${a.c}"></i>${a.m}` }), h('td', {}, 'API'), h('td', {}, a.v[0].toFixed(1)), h('td', {}, a.v[1].toFixed(1)), h('td', {}, '–'), h('td', {}, '–')));
 
+  /* Results chart, animated. Each planner's filled marker travels along its arrow from the hollow baseline marker to
+     its LEASH result, drawing the arrow as it goes (staggered per planner). It plays once when the chart scrolls into
+     view; the slider scrubs it and the button replays it. A magnified inset shows the crowded "safe and useful"
+     corner, where four real-robot planners land on the same point. Hovering a marker or a legend row highlights that
+     planner and shows its before -> after numbers. With reduced motion the final state is drawn without animation. */
   const chartEl = $('#chart');
   const ctl = $('#chart-ctl');
   const key = $('#chart-key');
@@ -311,14 +316,69 @@
   const s = (tag, a = {}) => { const el = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(a)) el.setAttribute(k, v); return el; };
   const tip = h('div', { class: 'tip' });
   chartEl.append(tip);
-  const drawChart = () => {
-    [...chartEl.querySelectorAll('svg')].forEach((x) => x.remove());
-    const W = 820, H = 470, L = 58, R = 18, T = 14, B = 56;
-    const X = (v) => L + (v / 100) * (W - L - R);
-    const Y = (v) => T + (v / 100) * (H - T - B); // HR 0 at the top: up is safer
-    const svg = s('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Harm rate versus safe success rate, baseline and LEASH' });
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const W = 820, H = 470, L = 58, R = 18, T = 14, B = 56;
+  const X = (v) => L + (v / 100) * (W - L - R);
+  const Y = (v) => T + (v / 100) * (H - T - B); // HR 0 at the top: up is safer
+  // inset: SSR 66-92 %, HR 0-22 %, drawn in the empty lower right of the plot
+  const ZS = [66, 92], ZH = [-1.5, 22];
+  const IN = { x: X(57), y: Y(52), w: X(99) - X(57), h: Y(97) - Y(52) };
+  const IX = (v) => IN.x + ((v - ZS[0]) / (ZS[1] - ZS[0])) * IN.w;
+  const IY = (v) => IN.y + ((v - ZH[0]) / (ZH[1] - ZH[0])) * IN.h;
+  const easeIO = (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+  const STAG = 0.075; // share of the timeline between two planners' starts
+  let svg = null, tracks = [], apiEls = [], ann = null, nPaths = 1, chartRaf = 0;
+  let progress = reducedMotion ? 1 : 0;
+
+  const marker = (kind, col, filled, r) => {
+    const st = { fill: filled ? col : '#fff', stroke: col, 'stroke-width': 2.4 };
+    if (kind === 'S') return s('circle', { cx: 0, cy: 0, r, ...st });
+    if (kind === 'R') return s('rect', { x: -r, y: -r, width: 2 * r, height: 2 * r, rx: 2.5, ...st });
+    return s('path', { d: `M0 ${-r * 1.25}L${r * 1.25} 0L0 ${r * 1.25}L${-r * 1.25} 0Z`, ...st });
+  };
+  const at = (el, x, y) => el.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)})`);
+  const f2c = (v) => v.toFixed(2);
+  const showTip = (html, x, y) => { tip.innerHTML = html; tip.style.left = `${(x / W) * 100}%`; tip.style.top = `${(y / H) * 100}%`; tip.classList.add('on'); };
+  const hideTip = () => tip.classList.remove('on');
+  const setFocus = (m) => {
+    for (const tr of tracks) tr.g.classList.toggle('dim', !!m && tr.m !== m);
+    for (const a of apiEls) a.classList.toggle('dim', !!m && a.dataset.m !== m);
+    for (const row of key.querySelectorAll('.row')) row.classList.toggle('on', row.dataset.m === m);
+  };
+
+  const render = () => {
+    const span = 1 - STAG * (nPaths - 1);
+    for (const tr of tracks) {
+      const lt = Math.min(1, Math.max(0, (progress - STAG * tr.i) / span));
+      const e = easeIO(lt);
+      const x = tr.x0 + (tr.x1 - tr.x0) * e, y = tr.y0 + (tr.y1 - tr.y0) * e;
+      tr.cx = x; tr.cy = y;
+      at(tr.mover, x, y);
+      tr.mover.style.opacity = lt > 0 ? 1 : 0;
+      const dx = x - tr.x0, dy = y - tr.y0, len = Math.hypot(dx, dy);
+      const g0 = tr.r + 3.5, g1 = tr.r + 5;
+      if (len > g0 + g1 + 6) {
+        const ux = dx / len, uy = dy / len;
+        const ax0 = tr.x0 + ux * g0, ay0 = tr.y0 + uy * g0, ax1 = x - ux * g1, ay1 = y - uy * g1;
+        const hx = ax1 - ux * 8, hy = ay1 - uy * 8;
+        tr.line.setAttribute('d', `M${ax0.toFixed(2)} ${ay0.toFixed(2)}L${ax1.toFixed(2)} ${ay1.toFixed(2)}`);
+        tr.head.setAttribute('d', `M${ax1.toFixed(2)} ${ay1.toFixed(2)}L${(hx - uy * 5).toFixed(2)} ${(hy + ux * 5).toFixed(2)}L${(hx + uy * 5).toFixed(2)} ${(hy - ux * 5).toFixed(2)}Z`);
+      } else {
+        tr.line.setAttribute('d', '');
+        tr.head.setAttribute('d', '');
+      }
+    }
+    if (ann) ann.style.opacity = String(Math.min(1, Math.max(0, (progress - 0.8) / 0.2)));
+    range.value = String(Math.round(progress * 1000));
+    range.style.setProperty('--p', `${progress * 100}%`);
+  };
+
+  const build = () => {
+    if (svg) svg.remove();
+    tracks = []; apiEls = []; ann = null;
+    svg = s('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Harm rate versus safe success rate: each planner moves from its baseline to its result with LEASH' });
     svg.append(s('rect', { class: 'zone', x: X(75), y: Y(0), width: X(100) - X(75), height: Y(12) - Y(0), rx: 8 }));
-    const zt = s('text', { class: 'zone-t', x: X(99), y: Y(0) + 16, 'text-anchor': 'end' }); zt.textContent = 'safe and useful'; svg.append(zt);
+    const zt = s('text', { class: 'zone-t', x: X(74), y: Y(0) + 14, 'text-anchor': 'end' }); zt.textContent = 'safe and useful →'; svg.append(zt);
     const ax = s('g', { class: 'ax' });
     for (let v = 0; v <= 100; v += 20) {
       ax.append(s('line', { x1: X(v), x2: X(v), y1: Y(0), y2: Y(100) }), s('line', { x1: X(0), x2: X(100), y1: Y(v), y2: Y(v) }));
@@ -328,64 +388,132 @@
     const xl = s('text', { class: 't', x: (X(0) + X(100)) / 2, y: H - 8, 'text-anchor': 'middle' }); xl.textContent = 'Safe Success Rate, SSR (%) → higher is better'; ax.append(xl);
     const yl = s('text', { class: 't', transform: `translate(16 ${(Y(0) + Y(100)) / 2}) rotate(-90)`, 'text-anchor': 'middle' }); yl.textContent = 'Harm Rate, HR (%) ↑ lower is better'; ax.append(yl);
     svg.append(ax);
+    // the zoomed region on the main plot, linked to the inset
+    svg.append(s('rect', { class: 'zoom-box', x: X(ZS[0]), y: Y(0), width: X(ZS[1]) - X(ZS[0]), height: Y(ZH[1]) - Y(0), rx: 6 }));
     const defs = s('defs');
+    const cp = s('clipPath', { id: 'inset-clip' });
+    cp.append(s('rect', { x: IN.x, y: IN.y, width: IN.w, height: IN.h, rx: 12 }));
+    defs.append(cp);
     svg.append(defs);
-    const shape = (kind, x, y, col, filled, r = 7.5) => {
-      const st = { fill: filled ? col : '#fff', stroke: col, 'stroke-width': 2.4 };
-      if (kind === 'S') return s('circle', { cx: x, cy: y, r, ...st });
-      if (kind === 'R') return s('rect', { x: x - r, y: y - r, width: 2 * r, height: 2 * r, rx: 2.5, ...st });
-      return s('path', { d: `M${x} ${y - r * 1.25}L${x + r * 1.25} ${y}L${x} ${y + r * 1.25}L${x - r * 1.25} ${y}Z`, ...st });
-    };
-    const hover = (el, html, x, y) => {
-      el.classList.add('pt');
-      el.addEventListener('mouseenter', () => { tip.innerHTML = html; tip.style.left = `${(x / W) * 100}%`; tip.style.top = `${(y / H) * 100}%`; tip.classList.add('on'); });
-      el.addEventListener('mouseleave', () => tip.classList.remove('on'));
-    };
+
+    const views = [{ X, Y, r: 7.5, inset: false, parent: svg }];
+    const ins = s('g', { class: 'inset' });
+    ins.append(s('path', { class: 'inset-link', d: `M${X(ZS[0])} ${Y(ZH[1])}L${IN.x} ${IN.y}M${X(ZS[1])} ${Y(ZH[1])}L${IN.x + IN.w} ${IN.y}` }));
+    ins.append(s('rect', { class: 'inset-bg', x: IN.x, y: IN.y, width: IN.w, height: IN.h, rx: 12 }));
+    const ig = s('g', { 'clip-path': 'url(#inset-clip)' });
+    ig.append(s('rect', { class: 'zone', x: IX(75), y: IY(ZH[0]), width: IX(100) - IX(75), height: IY(12) - IY(ZH[0]) }));
+    for (const v of [70, 75, 80, 85, 90]) ig.append(s('line', { class: 'ig', x1: IX(v), x2: IX(v), y1: IN.y, y2: IN.y + IN.h }));
+    for (const v of [0, 5, 10, 15, 20]) ig.append(s('line', { class: 'ig', x1: IN.x, x2: IN.x + IN.w, y1: IY(v), y2: IY(v) }));
+    const itracks = s('g', { 'clip-path': 'url(#inset-clip)' });
+    ins.append(ig, itracks);
+    for (const v of [70, 80, 90]) { const t = s('text', { class: 'it', x: IX(v), y: IN.y + IN.h - 7, 'text-anchor': 'middle' }); t.textContent = `${v}`; ins.append(t); }
+    for (const v of [0, 10, 20]) { const t = s('text', { class: 'it', x: IN.x + 7, y: IY(v) + 4 }); t.textContent = `${v}`; ins.append(t); }
+    const itl = s('text', { class: 'it-title', x: IN.x + 2, y: IN.y - 9 }); itl.textContent = `Zoom: SSR ${ZS[0]}–${ZS[1]}%, HR 0–${ZH[1]}%`; ins.append(itl);
+    views.push({ X: IX, Y: IY, r: 6.5, inset: true, parent: itracks });
+
+    let i = 0;
     for (const r of RES) {
       for (const k of ['S', 'R']) {
         const v = r[k];
         if (!v || (mode !== 'both' && mode !== k)) continue;
         const [hb, sb, hl, sl] = v;
-        const x0 = X(sb), y0 = Y(hb), x1 = X(sl), y1 = Y(hl);
-        const len = Math.hypot(x1 - x0, y1 - y0);
-        const g = s('g');
-        if (len > 18) {
-          const ux = (x1 - x0) / len, uy = (y1 - y0) / len;
-          const ax0 = x0 + ux * 11, ay0 = y0 + uy * 11, ax1 = x1 - ux * 13, ay1 = y1 - uy * 13;
-          g.append(s('path', { class: 'arrow', d: `M${ax0} ${ay0}L${ax1} ${ay1}`, stroke: r.c, opacity: 0.55 }));
-          const hx = ax1 - ux * 8, hy = ay1 - uy * 8;
-          g.append(s('path', { d: `M${ax1} ${ay1}L${hx - uy * 5} ${hy + ux * 5}L${hx + uy * 5} ${hy - ux * 5}Z`, fill: r.c, opacity: 0.7 }));
+        const set = k === 'S' ? 'Simulation (RoboRisk-S)' : 'Real robot (RoboRisk-R)';
+        const html = `<b>${r.m}</b> · ${set}<br>HR ${f2c(hb)}% → <b>${f2c(hl)}%</b> &nbsp; SSR ${f2c(sb)}% → <b>${f2c(sl)}%</b>`;
+        for (const vw of views) {
+          const g = s('g', { class: 'trk' });
+          const line = s('path', { class: 'arrow', stroke: r.c });
+          const head = s('path', { class: 'head', fill: r.c });
+          const base = marker(k, r.c, false, vw.r);
+          const mover = marker(k, r.c, true, vw.r);
+          const tr = { m: r.m, g, line, head, mover, i, r: vw.r, x0: vw.X(sb), y0: vw.Y(hb), x1: vw.X(sl), y1: vw.Y(hl), cx: 0, cy: 0 };
+          at(base, tr.x0, tr.y0);
+          g.append(line, head, base, mover);
+          vw.parent.append(g);
+          for (const [el, which] of [[base, 'base'], [mover, 'mover']]) {
+            el.classList.add('pt');
+            el.addEventListener('mouseenter', () => {
+              setFocus(r.m);
+              const [x, y] = which === 'base' ? [tr.x0, tr.y0] : [tr.cx, tr.cy];
+              showTip(html, x, y);
+            });
+            el.addEventListener('mouseleave', () => { setFocus(null); hideTip(); });
+          }
+          tracks.push(tr);
         }
-        const set = k === 'S' ? 'RoboRisk-S' : 'RoboRisk-R';
-        const pb = shape(k, x0, y0, r.c, false);
-        const pl = shape(k, x1, y1, r.c, true);
-        hover(pb, `<b>${r.m}</b> · ${set}<br>Baseline: HR ${hb.toFixed(2)}%, SSR ${sb.toFixed(2)}%`, x0, y0);
-        hover(pl, `<b>${r.m}</b> · ${set}<br>LEASH: HR ${hl.toFixed(2)}%, SSR ${sl.toFixed(2)}%`, x1, y1);
-        g.append(pb, pl);
-        svg.append(g);
+        i += 1;
       }
     }
-    if (mode !== 'S') {
-      // four real-robot planners land on the same LEASH point
-      const lx = X(84.62), ly = Y(0);
-      const t = s('text', { x: lx - 14, y: ly + 30, 'text-anchor': 'end', style: 'font:600 12px var(--sans);fill:var(--ink-2)' });
-      t.textContent = '4 planners on the real robot: 0% HR';
-      svg.append(s('path', { d: `M${lx - 12} ${ly + 24}L${lx - 4} ${ly + 8}`, stroke: 'var(--ink-3)', 'stroke-width': 1.2, fill: 'none' }), t);
-    }
+    nPaths = Math.max(1, i);
     if (mode !== 'R') for (const a of API) {
-      const p = shape('A', X(a.v[1]), Y(a.v[0]), a.c, false);
-      hover(p, `<b>${a.m}</b> · adapted sim subset<br>HR ${a.v[0].toFixed(1)}%, SSR ${a.v[1].toFixed(1)}%`, X(a.v[1]), Y(a.v[0]));
+      const x = X(a.v[1]), y = Y(a.v[0]);
+      const p = marker('A', a.c, false, 7.5);
+      at(p, x, y);
+      p.classList.add('pt');
+      p.dataset.m = a.m;
+      p.addEventListener('mouseenter', () => { setFocus(a.m); showTip(`<b>${a.m}</b> · adapted sim subset, baseline only<br>HR ${a.v[0].toFixed(1)}% &nbsp; SSR ${a.v[1].toFixed(1)}%`, x, y); });
+      p.addEventListener('mouseleave', () => { setFocus(null); hideTip(); });
+      apiEls.push(p);
       svg.append(p);
     }
+    svg.append(ins);
+    if (mode !== 'S') {
+      // four real-robot planners (Astra, Sol, Gemini, Claude) land on the same LEASH point
+      const px = IX(84.62), py = IY(0);
+      ann = s('g', { class: 'ann' });
+      ann.append(s('path', { d: `M${px - 9} ${py + 9}L${px - 26} ${py + 26}`, class: 'ann-l' }));
+      const t = s('text', { x: px - 29, y: py + 37, 'text-anchor': 'end' });
+      t.textContent = '4 real-robot planners: 0% HR';
+      ann.append(t);
+      svg.append(ann);
+    }
     chartEl.prepend(svg);
+    render();
   };
+
+  const play = () => {
+    cancelAnimationFrame(chartRaf);
+    if (reducedMotion) { progress = 1; render(); return; }
+    const D = 1300 + 260 * nPaths;
+    let t0 = null; // the clock starts on the first drawn frame, so a background tab cannot skip the animation
+    progress = 0;
+    render();
+    const step = (now) => {
+      if (t0 === null) t0 = now;
+      progress = Math.min(1, (now - t0) / D);
+      render();
+      if (progress < 1) chartRaf = requestAnimationFrame(step);
+    };
+    chartRaf = requestAnimationFrame(step);
+  };
+
+  // controls: setting chips, then a player row (replay + scrubber from baseline to LEASH)
   const ctlBtn = (v, text) => {
     const b = h('button', { class: 'chip', type: 'button', 'aria-pressed': String(mode === v) }, text);
-    b.addEventListener('click', () => { mode = v; [...ctl.children].forEach((x) => x.setAttribute('aria-pressed', String(x === b))); drawChart(); });
+    b.addEventListener('click', () => {
+      mode = v;
+      [...ctl.children].forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      build();
+      play();
+    });
     return b;
   };
   ctl.append(ctlBtn('both', 'Both settings'), ctlBtn('S', 'Simulation (RoboRisk-S)'), ctlBtn('R', 'Real robot (RoboRisk-R)'));
-  for (const r of [...RES, ...API]) key.append(h('div', { class: 'row' }, h('span', { class: 'sw', style: `background:${r.c}` }), r.m));
+  const playBtn = h('button', { class: 'cp-btn', type: 'button', 'aria-label': 'Replay the move from baseline to LEASH' });
+  playBtn.innerHTML = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12.9 1.6v3.3H9.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Replay';
+  const range = h('input', { class: 'cp-range', type: 'range', min: '0', max: '1000', step: '1', value: '0', 'aria-label': 'Move from baseline to LEASH' });
+  range.addEventListener('input', () => { cancelAnimationFrame(chartRaf); progress = Number(range.value) / 1000; render(); });
+  playBtn.addEventListener('click', play);
+  ctl.after(h('div', { class: 'chart-player' }, playBtn, h('span', { class: 'cp-l' }, 'Baseline'), range, h('span', { class: 'cp-l leash' }, 'With LEASH')));
+
+  for (const r of [...RES, ...API]) {
+    const row = h('div', { class: 'row', tabindex: '0' }, h('span', { class: 'sw', style: `background:${r.c}` }), r.m);
+    row.dataset.m = r.m;
+    row.addEventListener('mouseenter', () => setFocus(r.m));
+    row.addEventListener('mouseleave', () => setFocus(null));
+    row.addEventListener('focus', () => setFocus(r.m));
+    row.addEventListener('blur', () => setFocus(null));
+    key.append(row);
+  }
   const markerKey = h('table', {class: 'marker-key', 'aria-label': 'Figure marker key'});
   markerKey.append(h('thead', {}, h('tr', {}, ...['Setting', 'Baseline', 'LEASH'].map(label => h('th', {scope: 'col'}, label)))));
   const markerRows = h('tbody');
@@ -395,7 +523,14 @@
   }
   markerKey.append(markerRows);
   key.append(markerKey);
-  drawChart();
+  build();
+  if (!reducedMotion && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); play(); } }, { threshold: 0.45 });
+    io.observe(chartEl);
+  } else {
+    progress = 1;
+    render();
+  }
 
   /* ---------------------------------------------------------------- coding agent vs robot: an animated comparison
      The terminal types the request, the agent's plan and the destructive command, the reviewer spins and rejects it;
