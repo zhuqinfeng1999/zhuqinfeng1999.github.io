@@ -73,7 +73,7 @@
       src: 'https://www.youtube-nocookie.com/embed/' + yt,
       title: 'LEASH: Stay Safe in Agentic Robotics',
       allow: 'encrypted-media; picture-in-picture; fullscreen',
-      allowfullscreen: '', loading: 'lazy'
+      allowfullscreen: '', loading: 'lazy', referrerpolicy: 'strict-origin-when-cross-origin'
     });
     mv.replaceChildren(player);
   }
