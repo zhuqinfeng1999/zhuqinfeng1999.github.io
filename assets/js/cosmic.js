@@ -206,7 +206,7 @@
       { title: 'Publications Library', detail: 'Search, filter and copy BibTeX', href: '/publications/', type: 'Page' },
       { title: 'Projects', detail: 'Datasets, methods and research maps', href: '/projects/', type: 'Page' },
       { title: 'Embodied Intelligence Explorer', detail: 'Explore robotic arms, dexterous hands, VLA and world–action models', href: '/explorer/', type: 'Explorer' },
-      { title: 'CV — August 2026', detail: 'Download PDF', href: '/assets/docs/Qinfeng_Zhu_CV.pdf', type: 'Document' }
+      { title: 'CV / 简历 — English + 中文 · November 2026', detail: 'One PDF: English first, followed by Chinese', href: '/assets/docs/Qinfeng_Zhu_CV.pdf?v=20261112-bilingual', type: 'Document' }
     ];
     let visible = [];
     let activeIndex = 0;
